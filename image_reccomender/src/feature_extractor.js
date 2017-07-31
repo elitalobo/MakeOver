@@ -319,7 +319,7 @@ function processText(text, details, old_callback) {
 	//console.log(old_callback);
 	text  = text.replace(/[^A-Za-z 0-9 \.,\?""!@#\$%\^&\*\(\)-_=\+;:<>\/\\\|\}\{\[\]`~]*/g, '')
 	console.log(text);
-	request.post("http://ec2-54-174-107-142.compute-1.amazonaws.com/api/get_top_business_keywords" ,
+	request.post("http//54.208.20.206/api/get_top_business_keywords" ,
                                   { json: { "text" : JSON.stringify(text)  }},
                                   function (error, response, body) {
 					//console.log("body");
