@@ -76,7 +76,7 @@ var getSimilarImages = function(params, callback) {
 	var getImagesFromImagio = function(parameters, callback) {
 	var keywords = parameters["keywords"];
 	console.log("Calling keywords " + keywords);
-	request.get('http://127.0.0.1:8080/images/search?keywords=' + keywords + "&width="+ params["photo"].photo.width + "&height=" + params["photo"].photo.height ,
+	request.get('http://127.0.0.1:4040/images/search?keywords=' + keywords + "&width="+ params["photo"].photo.width + "&height=" + params["photo"].photo.height ,
                                   { json: null },
                                   function (error, response, body) {
                                         console.log(error==null);
