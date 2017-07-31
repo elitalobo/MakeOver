@@ -158,7 +158,7 @@ var getImagesFromSource = function(photos, callback) {
 var request_handler = function(req,responseObj){
 		var res = responseObj.response;
 		console.log("received request");
-		process.exec('seq 1 | parallel -n0 casperjs worker.js '+ req.q, (error, stdout, stderr) => {
+		/*process.exec('seq 1 | parallel -n0 casperjs worker.js '+ req.q, (error, stdout, stderr) => {
 			logger.log('info', "got stdout ", { domain: req.q , stdout : stdout });
   			if (error) {
  				   console.error(`exec error: ${error}`);
@@ -171,7 +171,7 @@ var request_handler = function(req,responseObj){
 				res.status(503);
 				return;
 			}
-			else {
+			else {*/
 				
 				var extract_website_drain = function(results) {
 				console.log(results.success);
@@ -264,10 +264,10 @@ var request_handler = function(req,responseObj){
 				results = extract_website_links("data",req.q, extract_website_drain);		
 			
 				
-			}
+			//}
 			//res.send({ stdout: stdout , stderr: stderr }).end();
   			
-		});
+		//});
 	
 
 
