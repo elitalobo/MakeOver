@@ -1,0 +1,16 @@
+<!DOCTYPE html><html><head lang="en">
+    <meta charset="UTF-8">
+    <title>Map User ID</title>
+</head>
+<body>
+    Hello
+    <script type="text/javascript">
+        var urlParts = window.location.href.split('?');
+        if (urlParts.length === 2) {
+            var appNexusUserId = urlParts[1];
+            window.parent.postMessage(appNexusUserId, '*');
+        }
+    </script>
+
+
+</body></html>

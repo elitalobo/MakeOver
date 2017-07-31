@@ -1,0 +1,11 @@
+about:blank
+about:blank
+about:blank
+http://staticxx.facebook.com/connect/xd_arbiter/r/XBwzv5Yrm_1.js?version=42#channel=f3c5a82474&origin=http%3A%2F%2Fwww.moveitmonday.org
+https://staticxx.facebook.com/connect/xd_arbiter/r/XBwzv5Yrm_1.js?version=42#channel=f3c5a82474&origin=http%3A%2F%2Fwww.moveitmonday.org
+https://www.facebook.com/v2.6/plugins/page.php?adapt_container_width=true&app_id=&channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FXBwzv5Yrm_1.js%3Fversion%3D42%23cb%3Df2e120d3dc%26domain%3Dwww.moveitmonday.org%26origin%3Dhttp%253A%252F%252Fwww.moveitmonday.org%252Ff3c5a82474%26relation%3Dparent.parent&container_width=240&height=270&hide_cover=true&href=http%3A%2F%2Ffacebook.com%2FLetsMoveItMonday&locale=en_US&sdk=joey&show_facepile=true&show_posts=false&small_header=false&width=240
+about:blank
+http://t.sharethis.com/1/d/t.dhj?rnd=1498676606517&cid=c010&dmn=www.moveitmonday.org#v0=CvQFBVlT%252FX4AAAARaFnxAw%253D%253D&v1=www.moveitmonday.org&v2=http%253A%252F%252Fseg.sharethis.com%252FgetSegment.php%253Fpurl%253Dhttp%25253A%25252F%25252Fwww.moveitmonday.org%25252Ffuel-for-exercise%25252F%2526rnd%253D1498676606517&v3=http%253A%252F%252Fwww.moveitmonday.org%252Ffuel-for-exercise%252F&v4=http%253A%252F%252Fwww.moveitmonday.org%252Ffuel-for-exercise%252F&rnd=1498676606517&cid=c010&dmn=www.moveitmonday.org&tt=t.dhj&dhjLcy=148&lbl=pxcel&flbl=pxcel&ll=d&ver=0.96.849&ell=d&cck=__stid&pn=%2Ffuel-for-exercise%2F&qs=na&cc=IN&ipaddr=
+about:blank
+about:blank
+https://www.facebook.com/v2.6/plugins/page.php?adapt_container_width=true&app_id=&channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FXBwzv5Yrm_1.js%3Fversion%3D42%23cb%3Df1fe9c57c%26domain%3Dwww.moveitmonday.org%26origin%3Dhttp%253A%252F%252Fwww.moveitmonday.org%252Ff3c5a82474%26relation%3Dparent.parent&container_width=0&height=270&hide_cover=true&href=http%3A%2F%2Ffacebook.com%2FLetsMoveItMonday&locale=en_US&sdk=joey&show_facepile=true&show_posts=false&small_header=false&width=240

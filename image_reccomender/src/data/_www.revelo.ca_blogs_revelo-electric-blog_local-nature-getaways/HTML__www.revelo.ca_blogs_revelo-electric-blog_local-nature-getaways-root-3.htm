@@ -1,0 +1,783 @@
+<!DOCTYPE html><html><head>
+    <title></title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; media-src *; img-src * 'self' data: blob:; script-src * 'self' 'unsafe-inline' 'unsafe-eval'; style-src * 'self' 'unsafe-inline'; font-src * data: ;">
+    <script type="text/javascript" src="//static.zbcdn.net/__smgbiiy/asset/script/jquery.js"></script><style type="text/css">@font-face {
+  font-family: 'Zotabox';
+  src: url('//static.zbcdn.net/__smgbiiy/asset/font/Zotabox/ztb.eot'); /* IE9 Compat Modes */
+  src: url('//static.zbcdn.net/__smgbiiy/asset/font/Zotabox/ztb.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('//static.zbcdn.net/__smgbiiy/asset/font/Zotabox/ztb.woff') format('woff'), /* Pretty Modern Browsers */
+       url('//static.zbcdn.net/__smgbiiy/asset/font/Zotabox/ztb.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('//static.zbcdn.net/__smgbiiy/asset/font/Zotabox/ztb.svg') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Zotabox2';
+  src: url('//static.zbcdn.net/__smgbiiy/asset/font/Zotabox2/ztb2.eot'); /* IE9 Compat Modes */
+  src: url('//static.zbcdn.net/__smgbiiy/asset/font/Zotabox2/ztb2.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('//static.zbcdn.net/__smgbiiy/asset/font/Zotabox2/ztb2.woff') format('woff'), /* Pretty Modern Browsers */
+       url('//static.zbcdn.net/__smgbiiy/asset/font/Zotabox2/ztb2.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('//static.zbcdn.net/__smgbiiy/asset/font/Zotabox2/ztb2.svg') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'ztb3';
+    src: url('//static.zbcdn.net/__smgbiiy/asset/font/Zotabox3/ztb3.eot?1nsr50');
+    src: url('//static.zbcdn.net/__smgbiiy/asset/font/Zotabox3/ztb3.eot?1nsr50#iefix') format('embedded-opentype'),
+        url('//static.zbcdn.net/__smgbiiy/asset/font/Zotabox3/ztb3.ttf?1nsr50') format('truetype'),
+        url('//static.zbcdn.net/__smgbiiy/asset/font/Zotabox3/ztb3.woff?1nsr50') format('woff'),
+        url('//static.zbcdn.net/__smgbiiy/asset/font/Zotabox3/ztb3.svg?1nsr50#ztb3') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'zb-icons';
+  src:  url('//static.zbcdn.net/__smgbiiy/asset/font/zb-icons/zb-icons.eot?ejmah2');
+  src:  url('//static.zbcdn.net/__smgbiiy/asset/font/zb-icons/zb-icons.eot?ejmah2#iefix') format('embedded-opentype'),
+    url('//static.zbcdn.net/__smgbiiy/asset/font/zb-icons/zb-icons.ttf?ejmah2') format('truetype'),
+    url('//static.zbcdn.net/__smgbiiy/asset/font/zb-icons/zb-icons.woff?ejmah2') format('woff'),
+    url('//static.zbcdn.net/__smgbiiy/asset/font/zb-icons/zb-icons.svg?ejmah2#zb-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'zb-all';
+  src:  url('//static.zbcdn.net/__smgbiiy/asset/font/zb-all/zb-all.eot?ejmah2');
+  src:  url('//static.zbcdn.net/__smgbiiy/asset/font/zb-all/zb-all.eot?ejmah2#iefix') format('embedded-opentype'),
+    url('//static.zbcdn.net/__smgbiiy/asset/font/zb-all/zb-all.ttf?ejmah2') format('truetype'),
+    url('//static.zbcdn.net/__smgbiiy/asset/font/zb-all/zb-all.woff?ejmah2') format('woff'),
+    url('//static.zbcdn.net/__smgbiiy/asset/font/zb-all/zb-all.svg?ejmah2#zb-all') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.zb-icon,
+.zb-icon:before,
+.zb-icon:after {
+    font-family: 'Zotabox' !important;
+    background: unset !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 34px;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-iconmonstr-lock-1-icon:before {
+    content: "\e807";
+}
+.icon-iconmonstr-lock-2-icon:before {
+    content: "\e808";
+}
+.icon-iconmonstr-lock-3-icon:before {
+    content: "\e809";
+}
+.icon-iconmonstr-lock-4-icon .path1:before {
+    content: "\e80a";
+    color: rgb(255, 255, 255);
+}
+.icon-iconmonstr-lock-4-icon .path2:before {
+    content: "\e80b";
+    margin-left: -1.14453125em;
+    color: rgb(0, 0, 0);
+}
+.icon-iconmonstr-lock-5-icon:before {
+    content: "\e80c";
+}
+.icon-iconmonstr-lock-6-icon:before {
+    content: "\e80d";
+}
+.icon-iconmonstr-lock-7-icon:before {
+    content: "\e80e";
+}
+[data-wzb] .icon-arrow-left:before {
+    content: "\e600";
+}
+[data-wzb] .icon-arrow-right:before {
+    content: "\e601";
+}
+[data-wzb] .icon-close:before {
+    content: "\e602";
+    left: -7px;
+    position: absolute;
+    top: -21px;
+    margin: 0 !important;
+}
+.zb-tab-icon {
+    background: unset !important;
+}
+.icon-zotabox-logo:before {
+    content: "\e603";
+}
+.icon-tab-icon-1:before {
+    content: "\e800";
+}
+.icon-tab-icon-2:before {
+    content: "\e801";
+}
+.icon-tab-icon-3:before {
+    content: "\e802";
+}
+.icon-tab-icon-4:before {
+    content: "\e803";
+}
+.icon-tab-icon-5:before {
+    content: "\e804";
+}
+.icon-tab-icon-6:before {
+    content: "\e805";
+}
+.icon-tab-icon-7:before {
+    content: "\e806";
+}
+.icon-iconmonstr-lock-1-icon:before {
+    content: "\e807";
+}
+.icon-iconmonstr-lock-2-icon:before {
+    content: "\e808";
+}
+.icon-iconmonstr-lock-3-icon:before {
+    content: "\e809";
+}
+.icon-iconmonstr-lock-4-icon:before {
+    content: "\e80b";
+}
+.icon-iconmonstr-lock-5-icon:before {
+    content: "\e80c";
+}
+.icon-iconmonstr-lock-6-icon:before {
+    content: "\e80d";
+}
+.icon-iconmonstr-lock-7-icon:before {
+    content: "\e80e";
+}
+.icon-iconmonstr-lock-16-icon:before {
+    content: "\e80f";
+}
+.icon-iconmonstr-lock-17-icon:before {
+    content: "\e810";
+}
+.icon-iconmonstr-lock-icon:before {
+    content: "\e811";
+}
+.icon-facebook-1-icon:before {
+    content: "\e90e";
+}
+.icon-facebook-2-icon:before {
+    content: "\e90f";
+}
+.icon-padlock18:before {
+    content: "\e812";
+}
+.icon-zotabox-logo:before {
+    content: "\e603";
+}
+
+.zb2-icon,
+.zb2-icon:before,
+.zb2-icon:after {
+    font-family: 'Zotabox2' !important;
+    background: unset !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 34px;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook-messenger-icon-01:before {
+    content: "\e90a";
+}
+.icon-facebook-messenger-icon-02:before {
+    content: "\e90b";
+}
+.icon-facebook-messenger-icon-03:before {
+    content: "\e90c";
+}
+.icon-facebook-messenger-icon-04:before {
+    content: "\e90d";
+}
+[data-wzb] .icon-close:before {
+    content: "\e602";
+    margin: 0 !important;
+}
+.icon-ztb-company:before {
+    content: "\e900";
+}
+.icon-ztb-earth:before {
+    content: "\e901";
+}
+.icon-ztb-icon-chat1:before {
+    content: "\e902";
+}
+.icon-ztb-icon-chat2:before {
+    content: "\e903";
+}
+.icon-ztb-icon-chat4:before {
+    content: "\e904";
+}
+.icon-ztb-icon-email2:before {
+    content: "\e905";
+}
+.icon-ztb-icon-mail:before {
+    content: "\e906";
+}
+.icon-ztb-icon-send-mail:before {
+    content: "\e907";
+}
+.icon-ztb-mail:before {
+    content: "\e908";
+}
+.icon-ztb-pencil:before {
+    content: "\e909";
+}
+.icon-ztb-phone:before {
+    content: "\e90a";
+}
+.icon-ztb-star:before {
+    content: "\e90b";
+}
+.icon-ztb-user:before {
+    content: "\e90c";
+}
+.icon-icon-ztb-chat-01:before {
+    content: "\e913";
+}
+.icon-icon-ztb-chat-02:before {
+    content: "\e914";
+}
+.icon-tab-icon-none:before {
+    content: "";
+    color: #d8d8d8;
+    font-size: 50px;
+    left: -6px;
+    position: absolute;
+    top: 6px;
+    font-family: 'Zotabox' !important;
+}
+
+.zb3-icon,
+.zb3-icon:before,
+.zb3-icon:after {
+    font-family: 'ztb3' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-0:before {
+  content: "\e900";
+}
+.icon-001:before {
+  content: "\e901";
+}
+.icon-002:before {
+  content: "\e902";
+}
+.icon-003:before {
+  content: "\e903";
+}
+.icon-004:before {
+  content: "\e904";
+}
+.icon-005:before {
+  content: "\e905";
+}
+.icon-006:before {
+  content: "\e906";
+}
+.icon-007:before {
+  content: "\e907";
+}
+.icon-008:before {
+  content: "\e908";
+}
+.icon-009:before {
+  content: "\e909";
+}
+.icon-010:before {
+  content: "\e90a";
+}
+.icon-011:before {
+  content: "\e90b";
+}
+.icon-012:before {
+  content: "\e90c";
+}
+.icon-013:before {
+  content: "\e90d";
+}
+.icon-014:before {
+  content: "\e90e";
+}
+.icon-015:before {
+  content: "\e90f";
+}
+.icon-016:before {
+  content: "\e910";
+}
+.icon-017:before {
+  content: "\e911";
+}
+.icon-018:before {
+  content: "\e912";
+}
+.icon-019:before {
+  content: "\e913";
+}
+.icon-020:before {
+  content: "\e914";
+}
+.icon-021:before {
+  content: "\e915";
+}
+.icon-022:before {
+  content: "\e916";
+}
+.icon-023:before {
+  content: "\e917";
+}
+.icon-024:before {
+  content: "\e918";
+}
+.icon-025:before {
+  content: "\e919";
+}
+.icon-026:before {
+  content: "\e91a";
+}
+.icon-027:before {
+  content: "\e91b";
+}
+.icon-028:before {
+  content: "\e91c";
+}
+.icon-029:before {
+  content: "\e91d";
+}
+.icon-030:before {
+  content: "\e91e";
+}
+.icon-031:before {
+  content: "\e91f";
+}
+.icon-032:before {
+  content: "\e920";
+}
+.icon-033:before {
+  content: "\e921";
+}
+.icon-034:before {
+  content: "\e922";
+}
+.icon-035:before {
+  content: "\e923";
+}
+.icon-036:before {
+  content: "\e924";
+}
+.icon-037:before {
+  content: "\e925";
+}
+.icon-038:before {
+  content: "\e926";
+}
+.icon-039:before {
+  content: "\e927";
+}
+.icon-040:before {
+  content: "\e928";
+}
+.icon-041:before {
+  content: "\e929";
+}
+.icon-042:before {
+  content: "\e92a";
+}
+.icon-043:before {
+  content: "\e92b";
+}
+.icon-044:before {
+  content: "\e92c";
+}
+.icon-045:before {
+  content: "\e92d";
+}
+.icon-046:before {
+  content: "\e92e";
+}
+.icon-047:before {
+  content: "\e92f";
+}
+.icon-048:before {
+  content: "\e930";
+}
+.icon-049:before {
+  content: "\e931";
+}
+.icon-050:before {
+  content: "\e932";
+}
+.icon-051:before {
+  content: "\e933";
+}
+.icon-052:before {
+  content: "\e934";
+}
+.icon-053:before {
+  content: "\e935";
+}
+.icon-054:before {
+  content: "\e936";
+}
+.icon-055:before {
+  content: "\e937";
+}
+.icon-056:before {
+  content: "\e938";
+}
+.icon-057:before {
+  content: "\e939";
+}
+.icon-058:before {
+  content: "\e93a";
+}
+.icon-059:before {
+  content: "\e93b";
+}
+.icon-060:before {
+  content: "\e93c";
+}
+.icon-061:before {
+  content: "\e93d";
+}
+.icon-062:before {
+  content: "\e93e";
+}
+.icon-063:before {
+  content: "\e93f";
+}
+.icon-064:before {
+  content: "\e940";
+}
+.icon-065:before {
+  content: "\e941";
+}
+.icon-066:before {
+  content: "\e942";
+}
+.icon-067:before {
+  content: "\e943";
+}
+.icon-068:before {
+  content: "\e944";
+}
+.icon-069:before {
+  content: "\e945";
+}
+.icon-070:before {
+  content: "\e946";
+}
+.icon-071:before {
+  content: "\e947";
+}
+.icon-072:before {
+  content: "\e948";
+}
+.icon-073:before {
+  content: "\e949";
+}
+.icon-074:before {
+  content: "\e94a";
+}
+.icon-075:before {
+  content: "\e94b";
+}
+.icon-076:before {
+  content: "\e94c";
+}
+.icon-077:before {
+  content: "\e94d";
+}
+.icon-078:before {
+  content: "\e94e";
+}
+.icon-079:before {
+  content: "\e94f";
+}
+.icon-080:before {
+  content: "\e950";
+}
+.icon-081:before {
+  content: "\e951";
+}
+.icon-082:before {
+  content: "\e952";
+}
+.icon-083:before {
+  content: "\e953";
+}
+.icon-084:before {
+  content: "\e954";
+}
+.icon-085:before {
+  content: "\e955";
+}
+.icon-086:before {
+  content: "\e956";
+}
+.icon-087:before {
+  content: "\e957";
+}
+.icon-088:before {
+  content: "\e958";
+}
+.icon-089:before {
+  content: "\e959";
+}
+.icon-090:before {
+  content: "\e95a";
+}
+.icon-091:before {
+  content: "\e95b";
+}
+.icon-092:before {
+  content: "\e95c";
+}
+.icon-094:before {
+  content: "\e95d";
+}
+.icon-095:before {
+  content: "\e95e";
+}
+.icon-096:before {
+  content: "\e95f";
+}
+.icon-097:before {
+  content: "\e960";
+}
+.icon-098:before {
+  content: "\e961";
+}
+.icon-099:before {
+  content: "\e962";
+}
+.icon-100:before {
+  content: "\e963";
+}
+.icon-101:before {
+  content: "\e964";
+}
+.icon-102:before {
+  content: "\e965";
+}
+.icon-zotabox_logo:before {
+  content: "\e966";
+}
+
+[class^="zb-all-"], [class*="zb-all-"], [class*="zb-all-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'zb-all' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.zb-all-close-button:before {
+  content: "\e900";
+}
+.zb-all-icon-arrow-left:before {
+  content: "\e901";
+}
+.zb-all-icon-arrow-right:before {
+  content: "\e902";
+}
+.zb-all-icon-close:before {
+  content: "\e903";
+}
+.zb-all-icon-close-01:before {
+  content: "\e904";
+}
+.zb-all-icon-close-02:before {
+  content: "\e905";
+}
+.zb-all-quote-01:before {
+  content: "\e906";
+}
+.zb-all-setting-01:before {
+  content: "\e907";
+}
+.zb-all-zotabox-logo:before {
+  content: "\e908";
+}
+</style><style type="text/css">body{margin:0;padding:0;box-sizing:border-box}body *{box-sizing:border-box}.ztb-icon-wrapper [class^="icon-"],.ztb-icon-wrapper [class*=" icon-"]{font-family:'ztb3'}[class^="zb-"],[class*=" zb-"]{font-family:'zb-icons' !important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body [class^="zb-"]:before{font-family:'zb-icons'}.zb-back-01:before{content:"\e900"}.zb-back-02:before{content:"\e901"}.zb-back-03:before{content:"\e902"}.zb-back-04:before{content:"\e903"}.zb-back-05:before{content:"\e904"}.zb-back-06:before{content:"\e905"}.zb-back-07:before{content:"\e906"}.zb-back-09:before{content:"\e907"}.zb-back-10:before{content:"\e908"}.zb-back-to-top-01:before{content:"\e909"}.zb-back-to-top-02:before{content:"\e90a"}.zb-back-to-top-03:before{content:"\e90b"}.zb-back-to-top-04:before{content:"\e90c"}.zb-back-to-top-05:before{content:"\e90d"}.zb-back-to-top-06:before{content:"\e90e"}.zb-back-to-top-07:before{content:"\e90f"}.zb-back-to-top-08:before{content:"\e910"}.zb-back-to-top-09:before{content:"\e911"}.zb-back-to-top-10:before{content:"\e912"}.zb-back-to-top-11:before{content:"\e913"}.zb-back-to-top-12:before{content:"\e914"}.zb-back-to-top-13:before{content:"\e915"}.zb-back-to-top-14:before{content:"\e916"}.zb-back-to-top-15:before{content:"\e917"}.zb-bag-01:before{content:"\e918"}.zb-bag-02:before{content:"\e919"}.zb-bag-03:before{content:"\e91a"}.zb-bag-04:before{content:"\e91b"}.zb-bag-05:before{content:"\e91c"}.zb-bag-06:before{content:"\e91d"}.zb-bag-07:before{content:"\e91e"}.zb-cart-01:before{content:"\e91f"}.zb-cart-02:before{content:"\e920"}.zb-cart-03:before{content:"\e921"}.zb-cart-04:before{content:"\e922"}.zb-cart-06:before{content:"\e923"}.zb-cart-07:before{content:"\e924"}.zb-chat-bubble-01:before{content:"\e925"}.zb-chat-bubble-02:before{content:"\e926"}.zb-chat-bubble-03:before{content:"\e927"}.zb-coupon-01:before{content:"\e928"}.zb-coupon-02:before{content:"\e929"}.zb-coupon-03:before{content:"\e92a"}.zb-coupon-04:before{content:"\e92b"}.zb-gift-01:before{content:"\e92c"}.zb-gift-02:before{content:"\e92d"}.zb-gift-03:before{content:"\e92e"}.zb-gift-04:before{content:"\e92f"}.zb-gift-05:before{content:"\e930"}.zb-gift-06:before{content:"\e931"}.zb-gift-07:before{content:"\e932"}.zb-gift-08:before{content:"\e933"}.zb-gift-09:before{content:"\e934"}.zb-gift-10:before{content:"\e935"}.zb-gift-11:before{content:"\e936"}.zb-home-01:before{content:"\e937"}.zb-home-02:before{content:"\e938"}.zb-home-03:before{content:"\e939"}.zb-home-04:before{content:"\e93a"}.zb-home-05:before{content:"\e93b"}.zb-home-06:before{content:"\e93c"}.zb-mail-01:before{content:"\e93d"}.zb-mail-02:before{content:"\e93e"}.zb-mail-03:before{content:"\e93f"}.zb-mail-04:before{content:"\e940"}.zb-mail-05:before{content:"\e941"}.zb-mail-07:before{content:"\e942"}.zb-mail-08:before{content:"\e943"}.zb-mail-09:before{content:"\e944"}.zb-pin-01:before{content:"\e945"}.zb-pin-02:before{content:"\e946"}.zb-pin-03:before{content:"\e947"}.zb-pin-04:before{content:"\e948"}.zb-pin-05:before{content:"\e949"}.zb-pin-06:before{content:"\e94a"}.zb-pin-07:before{content:"\e94b"}.zb-pin-08:before{content:"\e94c"}.zb-pin-09:before{content:"\e94d"}.zb-pin-10:before{content:"\e94e"}.zb-pin-11:before{content:"\e94f"}.zb-pin-12:before{content:"\e950"}.zb-pin-13:before{content:"\e951"}.zb-shop-01:before{content:"\e952"}.zb-shop-02:before{content:"\e953"}.zb-shop-03:before{content:"\e954"}.zb-social-facebook:before{content:"\e955"}.zb-support-01:before{content:"\e956"}.zb-support-02:before{content:"\e957"}.zb-support-03:before{content:"\e958"}.zb-support-04:before{content:"\e959"}.zb-support-05:before{content:"\e95a"}.zb-support-06:before{content:"\e95b"}.zb-support-07:before{content:"\e95c"}.zb-support-08:before{content:"\e95d"}.ztb-icon-item{width:40px;height:40px;display:block;background-color:#000000;opacity:0.51;margin-right:5px;margin-bottom:5px}.ztb-icon-item:hover{opacity:1}.ztb-icon-item a{display:inline-block;width:100%;height:100%;text-align:center;text-decoration:none}.ztb-icon-item a:hover,.ztb-icon-item a:focus{text-decoration:none}.ztb-icon-item a i{color:#ffffff;font-size:20px;line-height:40px}.style2 .ztb-icon-item{border-radius:5px}.style3 .ztb-icon-item{border-radius:50%;margin-bottom:5px}.ztb-icon-wrapper .ztb-icon-item:last-child{margin-right:0;margin-bottom:0}
+</style>
+    <style type="text/css">/*<![CDATA[*//*]]>*/</style>
+</head>
+
+<body>
+    <div class="ztb-icon-wrapper style3">
+        <div class="ztb-icon-item back_to_top">
+	<a href="javascript:void(0);" target="">
+		<i class="zb-back-to-top-02"></i>
+	</a>
+</div>
+    </div>
+    
+
+<script type="text/javascript">
+    var BackToTop = function() {
+        this.initialize();
+    }
+    var isShowButton = false;
+    BackToTop.prototype = {
+        initialize: function() {
+            var _super = this;
+            //click back to top
+            this.backToTop();
+
+            //Click back
+            this.back();
+            if(Zotabox.Core.jQuery(parent.window).width() <= 700){
+                _super.buttonEvent();
+            }
+        },
+        refreshUI: function(){
+            var _super = this;
+            jQuery(document).ready(function(){
+                //set button max position
+                _super.setButtonPosition();
+                _super.buttonEvent();
+                Zotabox.addEvent('resize', parent.window, function(e) {
+                    _super.setButtonPosition();
+                });
+            })
+        },
+        backToTop: function(){
+            if('1' == true){
+                document.querySelector(".ztb-icon-item.back_to_top").onclick = function(){
+                    Zotabox.Core.jQuery('html,body').animate({
+                        scrollTop: 0
+                    }, 500);
+                }
+            }
+        },
+        back: function(){
+            if('0' == true){
+                document.querySelector(".ztb-icon-item.back").onclick = function(){
+                    parent.window.history.go(-1);
+                }
+            }
+        },
+        buttonEvent: function(){
+            var _super = this,
+            when_scroll = parseInt('60')*(jQuery(parent.document).height() / 100),
+            randomNumber = Math.random(),
+            windowScrollTop = parent.document.documentElement.scrollTop || parent.document.body.scrollTop,
+            srcoll_top = windowScrollTop + Zotabox.Core.jQuery(parent.window).height();
+            Zotabox.addEvent('scroll', parent.window, function(e) {
+                var top = parent.window.pageYOffset;
+                var windowInnerHeight = parent.window.innerHeight;
+                var bottom = windowInnerHeight + top;
+                var bodyHeight = Math.max(document.body.scrollHeight, parent.document.body.offsetHeight,
+                        parent.document.documentElement.clientHeight, parent.document.documentElement.scrollHeight,
+                        parent.document.documentElement.offsetHeight);
+                var onOffset = (bodyHeight - innerHeight) * parseInt('60') / 100 + innerHeight;
+                windowScrollTop = parent.document.documentElement.scrollTop || parent.document.body.scrollTop;
+                srcoll_top = windowScrollTop + Zotabox.Core.jQuery(parent.window).height();
+                if(when_scroll == 0){
+                    //Hien thi ngay lap tuc
+                    _super.showButton();
+                }else if(onOffset <= bottom && top > 0){
+                    //Hien thi sau khi scroll
+                    _super.showButton();
+                }else{
+                    //An button
+                    _super.hideButton();
+                }
+            });
+
+            //Hien thi ngay lap tuc
+            if((srcoll_top > when_scroll || when_scroll == 0) && windowScrollTop > 0){
+                _super.showButton();
+            }
+        },
+        showButton: function(){
+            var elm = Zotabox.Core.jQuery("#ztb-btt-widget-5d7def69"),
+                elmMobile = Zotabox.Core.jQuery('[data-wzb="SocialMobileTool"] .zbx-trigger .ztb-single-btt');
+            if(!isShowButton || elm.css('display') == 'none' || elmMobile.css('display') == 'none'){
+                isShowButton = true;
+                elm.show();
+                elmMobile.delay(300).css("display","block");
+                elm.addClass("ztb-btt-show");
+                elm.animate({
+                    opacity: 1,
+                }, 300, function() {
+                    // Animation complete.
+                });
+            }
+        },
+        hideButton: function(){
+            if(isShowButton){
+                var elm = Zotabox.Core.jQuery("#ztb-btt-widget-5d7def69"),
+                    elmMobile = Zotabox.Core.jQuery('[data-wzb="SocialMobileTool"] .zbx-trigger .ztb-single-btt');
+                isShowButton = false;
+                elm.animate({
+                    opacity: 0,
+                }, 300, function() {
+                    elm.hide();
+                    elm.removeClass("ztb-btt-show");
+                });
+                elmMobile.delay(300).css("display","none");
+            }
+        },
+        setButtonPosition: function(){
+            var offsetTop = Zotabox.Core.jQuery("#ztb-btt-widget-5d7def69").position().top,
+                windowHeight = jQuery(parent.window).height(),
+                widgetHeight = Zotabox.Core.jQuery("#ztb-btt-widget-5d7def69").height();
+            if((windowHeight - offsetTop) < widgetHeight){
+                Zotabox.Core.jQuery("#ztb-btt-widget-5d7def69").css({
+                    "top":"auto",
+                    "bottom": 0
+                });
+            }else{
+                Zotabox.Core.jQuery("#ztb-btt-widget-5d7def69").css({ 'top' : '', 'bottom' : '' });
+            }
+        }
+    }
+    window.onload = function() {
+        var buttonElms = Zotabox.Core.Sly('.ztb-icon-wrapper > a').search(document.body);
+        Zotabox._.each(buttonElms, function(buttonElm) {
+            Zotabox.addEvent('click', buttonElm, function(e) {
+                Zotabox.Stats.sendEvents2('CT', '5N0KWSGw', 320041);
+            });
+        });
+        window.BackToTopBox = new BackToTop();
+    };
+</script>
+
+</body></html>

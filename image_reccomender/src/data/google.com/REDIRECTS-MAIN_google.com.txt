@@ -1,0 +1,4 @@
+http://google.com/
+http://www.google.co.in/?gfe_rd=cr&ei=ds5TWeC4NqTv8wfWgp3wCA
+https://www.google.co.in/?gfe_rd=cr&ei=ds5TWeC4NqTv8wfWgp3wCA&gws_rd=ssl
+about:blank

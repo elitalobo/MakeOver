@@ -1,0 +1,758 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>  Hacking the Arduino Yún</title>
+
+<meta name="generator" content="WordPress 4.3.11"> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="http://www.blog.zapro.dk/wp-content/themes/itheme-1-1/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="http://www.blog.zapro.dk/wp-content/themes/itheme-1-1/print.css" type="text/css" media="print">
+
+<!-- Sidebar docking boxes (dbx) by Brothercake - http://www.brothercake.com/ -->
+<script type="text/javascript" src="http://www.blog.zapro.dk/wp-content/themes/itheme-1-1/dbx.js"></script>
+<script type="text/javascript" src="http://www.blog.zapro.dk/wp-content/themes/itheme-1-1/dbx-key.js"></script>
+<link rel="stylesheet" type="text/css" href="http://www.blog.zapro.dk/wp-content/themes/itheme-1-1/dbx.css" media="screen, projection">
+
+<!--[if lt IE 7]>
+<link rel="stylesheet" href="http://www.blog.zapro.dk/wp-content/themes/itheme-1-1/ie-gif.css" type="text/css" />
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="Zapro.dk Blog RSS Feed" href="http://www.blog.zapro.dk/?feed=rss2">
+<link rel="pingback" href="http://www.blog.zapro.dk/xmlrpc.php">
+
+<link rel="alternate" type="application/rss+xml" title="Zapro.dk Blog » Hacking the Arduino Yún Comments Feed" href="http://www.blog.zapro.dk/?feed=rss2&amp;p=394">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.blog.zapro.dk\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.11"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="http://www.blog.zapro.dk/wp-includes/js/wp-emoji-release.min.js?ver=4.3.11" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.blog.zapro.dk/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.blog.zapro.dk/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Pretty displays" href="http://www.blog.zapro.dk/?p=378">
+<meta name="generator" content="WordPress 4.3.11">
+<link rel="canonical" href="http://www.blog.zapro.dk/?p=394">
+<link rel="shortlink" href="http://www.blog.zapro.dk/?p=394">
+</head>
+<body>
+<div id="page">
+  <div id="wrapper">
+    <div id="header">
+      <h1><a href="http://www.blog.zapro.dk">Zapro.dk Blog</a></h1>
+      <div class="description">Where stuff gets taken apart!</div>
+      <form method="get" id="searchform" action="http://www.blog.zapro.dk/">
+<div><input type="text" value="Search" name="s" id="s" onfocus="if (this.value == 'Search') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search';}">
+<input type="submit" id="searchsubmit" value="Go">
+</div>
+</form>
+    </div><!-- /header -->
+
+    <div id="left-col">
+      <div id="nav">
+        <ul>
+          <li class="page_item "><a href="http://www.blog.zapro.dk/" title="Home">Home</a></li>
+		  <li class="page_item page-item-2"><a href="http://www.blog.zapro.dk/?page_id=2">About</a></li>
+        </ul>
+      </div><!-- /nav -->
+
+    	  <div id="content">
+  
+  <div class="post-nav"> <span class="previous"><a href="http://www.blog.zapro.dk/?p=378" rel="prev">Pretty displays</a></span> <span class="next"></span></div>
+  
+  
+        <div class="post" id="post-394">
+		  <div class="date"><span>Jul</span> 27</div>
+		  <div class="title">
+          <h2><a href="http://www.blog.zapro.dk/?p=394" rel="bookmark" title="Permanent Link to Hacking the Arduino Yún">Hacking the Arduino Yún</a></h2>
+          <div class="postdata"><span class="category"><a href="http://www.blog.zapro.dk/?cat=7" rel="category">Arduino</a>, <a href="http://www.blog.zapro.dk/?cat=3" rel="category">Electronics</a>, <a href="http://www.blog.zapro.dk/?cat=8" rel="category">Teardown</a></span> <span class="right mini-add-comment"><a href="#respond">Add comments</a></span></div>
+		  </div>
+          <div class="entry">
+            <p><a href="http://www.blog.zapro.dk/wp-content/myimages/2014/07/arduino-yun-front.jpg"><img class="alignnone size-medium wp-image-404" src="http://www.blog.zapro.dk/wp-content/myimages/2014/07/arduino-yun-front-300x199.jpg" alt="arduino-yun-front" width="300" height="199"></a></p>
+<p>The newest addition to my swarm of never ending pile of interesting electronics is the Arduino Yún.</p>
+<p>As I was getting some parts from <a title="A goldmine of good stuff!" href="http://canada.newark.com/" target="_blank">Newark Canada</a>, I just thought, well i’ll get myself an Yún to play with as well.</p>
+<p>Yún means Cloud in Mandarin, so it’s quite obvious it is an Arduino meant to be connected to the cloud (Internet of Things).</p>
+<p>&nbsp;</p>
+<p>As I usually do, I hack into the deeper workings of devices, and in the case of the Yún, there will be no difference.</p>
+<p>&nbsp;</p>
+<p>I will dig deeper into it’s internals – have You ever seen the “Black magic” hiding under the shield? I haven’t.</p>
+<p>Also, later I will look into how much power this unit takes, and to see if there is any way to tweak&nbsp;the power usage.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Setting up the Yún was a breeeze – I followed the instructions over at&nbsp;<a title="Arduino Yún - getting started" href="http://arduino.cc/en/Guide/ArduinoYun" target="_blank">http://arduino.cc/en/Guide/ArduinoYun</a></p>
+<p>Quickly I had it connected to my own WiFi-network, and programming it over Wifi with Arduino 1.5.7 (Beta at the moment) worked quite nicely.</p>
+<p>&nbsp;</p>
+<p>Well, let’s get to the point, what exactly is hiding under that EMI-shield?</p>
+<p>A quick desolder job with the Solder-wick (<a href="http://canada.newark.com/chemtronics/10-100l/braid-desoldering-rosin-100ft/dp/93F9160?ost=chemtronics+10-100l" target="_blank">Chemtronics 10-100L</a>, the best money can buy!) and the cover was off.</p>
+<div id="attachment_413" style="width: 310px" class="wp-caption alignnone"><a href="http://www.blog.zapro.dk/wp-content/myimages/2014/08/P1010635.jpg"><img class="size-medium wp-image-413" src="http://www.blog.zapro.dk/wp-content/myimages/2014/08/P1010635-300x222.jpg" alt="Yun uncovered - overview" width="300" height="222"></a><p class="wp-caption-text">Yun uncovered – overview</p></div>
+<p>&nbsp;</p>
+<p>Aha! – three chips – that ain’t much.</p>
+<p>On the left we have a Winbond <a href="http://www.blog.zapro.dk/wp-content/myimages/2014/07/W9751G6KB.pdf" target="_blank">W9751G6KB-25</a> – 16 Bit DDR2-RAM – this is the main memory for the DD-WRT linux-environment that the Yún runs.</p>
+<p>In the center there is the Atheros &nbsp;<a href="http://www.blog.zapro.dk/wp-content/myimages/2014/07/ar9331_datasheet.pdf" target="_blank">AR9331-AL1A</a> Wireless SOC – This is where all the magic happens.</p>
+<p>And on the Right, once again from Winbond, a <a href="http://www.blog.zapro.dk/wp-content/myimages/2014/07/W25Q128FV.pdf" target="_blank">25Q128FVSG</a>&nbsp;– a 128 MegaBit Boot-flash, using SPI-interface.</p>
+<p>&nbsp;</p>
+<p>So, now you know what hides under the shield, and you do not need to void the Warranty on your Yún to find out <img draggable="false" class="emoji" alt="😀" src="http://s.w.org/images/core/emoji/72x72/1f600.png"></p>
+<p>– Due to time constraints, I will leave the power-measurements to the next blog-post, as I need some time to gather readings, and present them in a usable manner.</p>
+						          </div><!--/entry -->
+		
+		
+<!-- You can start editing here. -->
+
+	<h3 id="comments">4 Responses to “Hacking the Arduino Yún”</h3> 
+
+	<ol class="commentlist">
+
+	
+		<li class="alt" id="comment-7251">
+			<cite>FastEddy</cite> Says:
+						<br>
+
+			<small class="commentmetadata"><a href="#comment-7251" title="">February 13th, 2015 at 08:09</a> </small>
+
+			<p>“I” should be capitalised and sentences always ended with a period.</p>
+<p>People who live in glass houses… (you know the rest)</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-7255">
+			<cite>Per Jensen</cite> Says:
+						<br>
+
+			<small class="commentmetadata"><a href="#comment-7255" title="">February 13th, 2015 at 11:02</a> </small>
+
+			<p>Now i’m never been teached the english language, so i make mistakes all the time. Using a capital “I” in the danish language is a big no-no.<br>
+The missing period is an oversight. sorry <img draggable="false" class="emoji" alt="😀" src="http://s.w.org/images/core/emoji/72x72/1f600.png"></p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-7342">
+			<cite>Clemens</cite> Says:
+						<br>
+
+			<small class="commentmetadata"><a href="#comment-7342" title="">March 2nd, 2015 at 14:03</a> </small>
+
+			<p>Thanks, so my Yun can stay covered. I like the barebone style of the existing Arduino boards … but EMI is a reason for hiding. <img draggable="false" class="emoji" alt="😉" src="http://s.w.org/images/core/emoji/72x72/1f609.png"> Thought there is some Wifi stuff under the hood.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-7343">
+			<cite>Clemens</cite> Says:
+						<br>
+
+			<small class="commentmetadata"><a href="#comment-7343" title="">March 2nd, 2015 at 14:03</a> </small>
+
+			<p>Thanks, so my Yun can stay covered. I like the barebone style of the existing Arduino boards … but EMI is a reason for hiding. <img draggable="false" class="emoji" alt="😉" src="http://s.w.org/images/core/emoji/72x72/1f609.png"> Thought there is some Wifi stuff under the hood.</p>
+
+		</li>
+
+	
+	
+	</ol>
+
+ 
+
+
+<h3 id="respond">Leave a Reply</h3>
+
+
+<form action="http://www.blog.zapro.dk/wp-comments-post.php" method="post" id="commentform">
+
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1">
+<label for="author"><strong>Name</strong> (required)</label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2">
+<label for="email"><strong>Mail</strong> (will not be published) (required)</label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3">
+<label for="url"><strong>Website</strong></label></p>
+
+
+<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+
+<p><div id="cResist">
+      <div id="resistorError" style="font-size: 14px; font-weight: bold; color: #FF0000;"></div>
+      <div class="fullWidth">Prove you are human by reading this resistor:</div>
+      <div class="col45">
+          <img id="resistorImagePNG" src="http://www.blog.zapro.dk/wp-content/plugins/resisty/resistorImage.php">
+          <div class="fullWidth">
+
+    
+    <div id="totalResistance">0Ω+/- 5%</div>
+      <input type="hidden" name="ohms" id="ohms" value="">
+      <input type="hidden" name="perc" id="perc" value="5">
+        <div id="allSliders">
+    <div class="formWrapper">
+      <input type="hidden" id="resist1" name="resist1" value="0"> 
+<!--       <div id="resist1Show" class="inputFake" >0</div> -->
+      <br>
+      <div class="sliderWrapper rounded" id="sliderresist1Wrapper">
+      <div class="slider" id="sliderresist1" onselectstart="return false" style="background-color: #000000;color: #FFFFFF" ;"="">0 
+      
+      </div>
+      	<div class="rulerColor" id="rulerColorsliderresist1_0" style="background-color: #000000; color: #FFFFFF; height: 20px; line-height: 20px;" onselectstart="return false">
+	  0	</div>
+		<div class="rulerColor" id="rulerColorsliderresist1_1" style="background-color: #643200; height: 20px; line-height: 20px;" onselectstart="return false">
+	  1	</div>
+		<div class="rulerColor" id="rulerColorsliderresist1_2" style="background-color: #FF0000; height: 20px; line-height: 20px;" onselectstart="return false">
+	  2	</div>
+		<div class="rulerColor" id="rulerColorsliderresist1_3" style="background-color: #FF9600; height: 20px; line-height: 20px;" onselectstart="return false">
+	  3	</div>
+		<div class="rulerColor" id="rulerColorsliderresist1_4" style="background-color: #FFFF00; height: 20px; line-height: 20px;" onselectstart="return false">
+	  4	</div>
+		<div class="rulerColor" id="rulerColorsliderresist1_5" style="background-color: #00FF00; height: 20px; line-height: 20px;" onselectstart="return false">
+	  5	</div>
+		<div class="rulerColor" id="rulerColorsliderresist1_6" style="background-color: #0000FF; height: 20px; line-height: 20px;" onselectstart="return false">
+	  6	</div>
+		<div class="rulerColor" id="rulerColorsliderresist1_7" style="background-color: #FF00FF; height: 20px; line-height: 20px;" onselectstart="return false">
+	  7	</div>
+		<div class="rulerColor" id="rulerColorsliderresist1_8" style="background-color: #646464; height: 20px; line-height: 20px;" onselectstart="return false">
+	  8	</div>
+		<div class="rulerColor" id="rulerColorsliderresist1_9" style="background-color: #FFFFFF; height: 20px; line-height: 20px;" onselectstart="return false">
+	  9	</div>
+	      </div>
+    </div>
+      
+        <div class="formWrapper">
+      <input type="hidden" id="resist2" name="resist2" value="0"> 
+<!--       <div id="resist2Show" class="inputFake" >0</div> -->
+      <br>
+      <div class="sliderWrapper rounded" id="sliderresist2Wrapper">
+      <div class="slider" id="sliderresist2" onselectstart="return false" style="background-color: #000000;color: #FFFFFF" ;"="">0 
+      
+      </div>
+      	<div class="rulerColor" id="rulerColorsliderresist2_0" style="background-color: #000000; color: #FFFFFF; height: 20px; line-height: 20px;" onselectstart="return false">
+	  0	</div>
+		<div class="rulerColor" id="rulerColorsliderresist2_1" style="background-color: #643200; height: 20px; line-height: 20px;" onselectstart="return false">
+	  1	</div>
+		<div class="rulerColor" id="rulerColorsliderresist2_2" style="background-color: #FF0000; height: 20px; line-height: 20px;" onselectstart="return false">
+	  2	</div>
+		<div class="rulerColor" id="rulerColorsliderresist2_3" style="background-color: #FF9600; height: 20px; line-height: 20px;" onselectstart="return false">
+	  3	</div>
+		<div class="rulerColor" id="rulerColorsliderresist2_4" style="background-color: #FFFF00; height: 20px; line-height: 20px;" onselectstart="return false">
+	  4	</div>
+		<div class="rulerColor" id="rulerColorsliderresist2_5" style="background-color: #00FF00; height: 20px; line-height: 20px;" onselectstart="return false">
+	  5	</div>
+		<div class="rulerColor" id="rulerColorsliderresist2_6" style="background-color: #0000FF; height: 20px; line-height: 20px;" onselectstart="return false">
+	  6	</div>
+		<div class="rulerColor" id="rulerColorsliderresist2_7" style="background-color: #FF00FF; height: 20px; line-height: 20px;" onselectstart="return false">
+	  7	</div>
+		<div class="rulerColor" id="rulerColorsliderresist2_8" style="background-color: #646464; height: 20px; line-height: 20px;" onselectstart="return false">
+	  8	</div>
+		<div class="rulerColor" id="rulerColorsliderresist2_9" style="background-color: #FFFFFF; height: 20px; line-height: 20px;" onselectstart="return false">
+	  9	</div>
+	      </div>
+    </div>
+      
+        <div class="formWrapper">
+      <input type="hidden" id="resist3" name="resist3" value="0"> 
+<!--       <div id="resist3Show" class="inputFake" >0</div> -->
+      <br>
+      <div class="sliderWrapper rounded" id="sliderresist3Wrapper">
+      <div class="slider" id="sliderresist3" onselectstart="return false" style="background-color: #000000;color: #FFFFFF" ;"="">0 
+      
+      </div>
+      	<div class="rulerColor" id="rulerColorsliderresist3_0" style="background-color: #000000; color: #FFFFFF; height: 20px; line-height: 20px;" onselectstart="return false">
+	  0	</div>
+		<div class="rulerColor" id="rulerColorsliderresist3_1" style="background-color: #643200; height: 20px; line-height: 20px;" onselectstart="return false">
+	  1	</div>
+		<div class="rulerColor" id="rulerColorsliderresist3_2" style="background-color: #FF0000; height: 20px; line-height: 20px;" onselectstart="return false">
+	  2	</div>
+		<div class="rulerColor" id="rulerColorsliderresist3_3" style="background-color: #FF9600; height: 20px; line-height: 20px;" onselectstart="return false">
+	  3	</div>
+		<div class="rulerColor" id="rulerColorsliderresist3_4" style="background-color: #FFFF00; height: 20px; line-height: 20px;" onselectstart="return false">
+	  4	</div>
+		<div class="rulerColor" id="rulerColorsliderresist3_5" style="background-color: #00FF00; height: 20px; line-height: 20px;" onselectstart="return false">
+	  5	</div>
+		<div class="rulerColor" id="rulerColorsliderresist3_6" style="background-color: #0000FF; height: 20px; line-height: 20px;" onselectstart="return false">
+	  6	</div>
+		<div class="rulerColor" id="rulerColorsliderresist3_7" style="background-color: #FF00FF; height: 20px; line-height: 20px;" onselectstart="return false">
+	  7	</div>
+		<div class="rulerColor" id="rulerColorsliderresist3_8" style="background-color: #646464; height: 20px; line-height: 20px;" onselectstart="return false">
+	  8	</div>
+		<div class="rulerColor" id="rulerColorsliderresist3_9" style="background-color: #FFFFFF; height: 20px; line-height: 20px;" onselectstart="return false">
+	  9	</div>
+	      </div>
+    </div>
+      
+        <div class="formWrapper">
+      <input type="hidden" id="resist4" name="resist4" value="5"> 
+<!--       <div id="resist4Show" class="inputFake" >5</div> -->
+      <br>
+      <div class="sliderWrapper rounded" id="sliderresist4Wrapper">
+      <div class="slider" id="sliderresist4" onselectstart="return false" style="background-color: #e9e914;">5 
+      
+      </div>
+      	<div class="rulerColor" id="rulerColorsliderresist4_0" style="background-color: #e9e914; height: 66px; line-height: 66px;" onselectstart="return false">
+	  5	</div>
+		<div class="rulerColor" id="rulerColorsliderresist4_1" style="background-color: #b3b3b3; height: 66px; line-height: 66px;" onselectstart="return false">
+	  10	</div>
+		<div class="rulerColor" id="rulerColorsliderresist4_2" style="background-color: #f1c43a; height: 66px; line-height: 66px;" onselectstart="return false">
+	  20	</div>
+	      </div>
+    </div>
+      
+          </div>
+      </div>
+    </div>
+
+	  <div class="col45" style="text-align: left;">
+
+	  <br>
+	  Match the sliders on the left to each color band on the resistor. <br><br>
+	<a href="#postcomment" onclick="javascript: document.getElementById('resistorImagePNG').src = 'http://www.blog.zapro.dk/wp-content/plugins/resisty/resistorImage.php?' + (new Date()).getTime()">Click Here</a> for a new resistor image.
+<br><br>
+	  If you'd like to learn more, read about resistor color codes <a href="http://en.wikipedia.org/wiki/Electronic_color_code" target="_blank">here</a>.
+<br><br>
+	  </div>
+</div><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment">
+<input type="hidden" name="comment_post_ID" value="394">
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="734e26dc5d"></p>
+    <script type="text/javascript">
+      // This is a hack to work around the strange MOD Rewrite rules we have on the dev server. 
+      // It works fine but in reality we should be using the other commented code, below
+      
+/*
+ *   Plugin Name: Resisty
+ *   Plugin URI: http://www.ladyada.net/website/start
+ *   Description: A captcha that uses resistor code values instead of hard to read letters
+ *   Version: 1.0
+ *   Author: Daigo Kawasaki
+ *   Author URI: http://www.adafruit.com
+ * License: GPL2
+ */
+
+var ie=document.all;
+var nn6=document.getElementById&&!document.all;
+
+var isdrag=false;
+var x,y;
+var dobj;
+
+var sliderRange = 200;
+var sliderStart;
+
+/*
+ * Initialize mouse event handlers
+ */
+function init_slider()
+{
+    document.onmousedown=selectmouse;
+    document.onmouseup=new Function("isdrag = false");
+}
+/*
+ * Move slider class, replace html in slider, show resistor value.
+ */
+function movemouse(e)
+{
+    if (isdrag)// && document.getElementById(dobj.id + 'Wrapper'))
+	{
+	    id = dobj.id;
+	    
+	    sliderStart = findy(document.getElementById(id + 'Wrapper'));
+	    mousey = nn6 ? ty + e.clientY - y: ty + event.clientY -y;
+	    
+	    //get the number of boxes the slider is split into
+	    elems = document.getElementById(id + 'Wrapper').getElementsByTagName('div').length - 1;
+		
+	    sliderPos = dobj.offsetTop - sliderStart + 12;
+	    sliderBox = (sliderPos / (sliderRange/elems));
+	    //this is the box the slider is on top of
+	    sliderBox = Math.floor(sliderBox);
+		
+	    var copyBoxId = 'rulerColor' + id + '_' + sliderBox;
+		
+	    //This is what we call 'resist1' etc
+	    idNum = id.replace('slider', '');
+
+
+	    if(document.getElementById(copyBoxId))
+		{
+		    if ( document.getElementById(copyBoxId).innerHTML != dobj.innerHTML)
+		        {
+			    // make sure to do this first! I dont know why but it only works if you do this first!
+			    document.getElementById(idNum).value = document.getElementById(copyBoxId).innerHTML.replace(/^\s*|\s*$/g,''); 
+			    if(ie)
+			     {
+				 replace_html(dobj.id, document.getElementById(copyBoxId).innerHTML);	
+				 replace_html('totalResistance', getResistance());
+			     }
+			    else
+			    {
+				dobj.innerHTML = document.getElementById(copyBoxId).innerHTML;	
+				document.getElementById('totalResistance').innerHTML =  getResistance();
+			    }
+			    dobj.style.backgroundColor = document.getElementById(copyBoxId).style.backgroundColor;
+			}
+			dobj.style.color = document.getElementById(copyBoxId).style.color;
+		    }
+		if ( mousey >= sliderStart && mousey < sliderStart + sliderRange - 12)
+		  {
+			if (isdrag)
+			    {
+				numerical_top = nn6 ? ty + e.clientY - y : ty + event.clientY - y;
+				dobj.style.top = numerical_top + 'px';
+				return false;
+			    }
+			
+		  }
+	    }
+    }
+
+/*
+ * formats resist1~4 to readable resistor value.
+ * also sets hidden post data ohms and perc (these are sent to be compared with session data)
+ */
+function getResistance()
+{
+    resist1 = document.getElementById('resist1').value;
+    resist2 = document.getElementById('resist2').value;
+    resist3 = document.getElementById('resist3').value;
+    resist4 = document.getElementById('resist4').value;
+    
+    resist = parseInt(resist1 + resist2) * Math.pow(10, resist3);
+
+    document.getElementById('ohms').value = resist;
+    document.getElementById('perc').value = resist4;
+	
+    if( resist >= 1000000)
+	{
+	    resist = resist / 1000000;
+	    resist = resist + 'M&#8486;';
+	}
+    else if( resist >= 1000)
+	{
+	    resist = resist / 1000;
+	    resist = resist + 'K&#8486;';
+	}
+    else
+	{
+	    resist = resist + '&#8486;';
+	}
+    resist = resist + '+/- ' + resist4 + '%';
+	
+    return resist;
+}
+
+/*
+ * Bound to event handler onMouseDown
+ * fires if onMouseDown is on an element with class='slider'
+ * calls mousemove to do actual moving
+ */
+function selectmouse(e) 
+{
+    var fobj       = nn6 ? e.target : event.srcElement;
+    var topelement = nn6 ? "HTML" : "BODY";
+    
+    while (fobj.tagName != topelement && fobj.className != "slider")
+	{
+	    fobj = nn6 ? fobj.parentNode : fobj.parentElement;
+	}
+
+    if (fobj.className=="slider")
+	{
+	    isdrag = true;
+	    dobj = fobj;
+	    ty = parseInt(dobj.offsetTop+0);
+	    y = nn6 ? e.clientY : event.clientY;
+	    document.onmousemove=movemouse;
+	    return false;
+	}
+}
+
+/*
+ * replace innerHTML in el with html (IE fix)
+ */
+function replace_html(el, html) 
+{
+    if( el ) 
+	{
+	    var oldEl = document.getElementById(el);
+	    var newEl = oldEl.cloneNode(true);
+	
+	    //If this is the moving element we need to keep that in newEl
+	    var dobby = (dobj == oldEl) ? true : false;
+
+	    //set the new HTML and insert back into the DOM
+	    newEl.innerHTML = html;
+	    if(oldEl.parentNode)
+		{
+		    oldEl.parentNode.replaceChild(newEl, oldEl);
+		    if(dobby)
+			{
+			    dobj = newEl;
+			}
+		}
+	}
+}
+
+
+/* 
+ * return the actual Y offset of obj (as with most things, this is an IE fix)
+ */
+function findy(obj)
+{
+    var top = 0;
+    if (obj.offsetParent)
+	{
+	    do {
+		top += obj.offsetTop;
+	    }while(obj = obj.offsetParent);
+	}
+    return top;
+}
+
+//initialize!
+init_slider();
+
+      
+      // load javascript and css into the head of the documnt
+      //      var filejavascript=document.createElement('script');
+      //      filejavascript.setAttribute("type","text/javascript");
+      //      filejavascript.setAttribute("src", "resistorScript.js");
+      //      document.getElementsByTagName("head")[0].appendChild(filejavascript);
+      //
+      // css
+      //      var filestyle=document.createElement("link");
+      //      filestyle.setAttribute("rel", "stylesheet");
+      //      filestyle.setAttribute("type", "text/css");
+      //      filestyle.setAttribute("href", "resistorStyle.css");
+      //      document.getElementsByTagName("head")[0].appendChild(filestyle);
+
+    </script>
+	<style language="text/css">
+	.cResist
+{
+
+}
+#resistError, .fullWidth
+{
+    width: 100%;
+}
+.col45
+{
+    margin-top: 100px;
+    width: 45%;
+    float: left;
+    text-align: center;
+}
+#allSliders
+{
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#totalResistance
+{
+    text-align: center;
+}
+.formWrapper
+{
+    text-align: center;
+    width: 40px;
+    float: left;
+}
+.sliderWrapper
+{
+    border: 1px solid #000;   
+    width: 20px;
+    margin: auto;
+}
+.rulerColor
+{
+    text-align: center;
+    width: 20px;
+    height: 20px;
+}
+.inputFake
+{
+    
+    text-align: center;
+    width: 20px;
+}
+.slider
+{
+    text-align: center;
+    line-height: 32px;
+    vertical-align: middle;
+    position: absolute;
+    margin-left: -6px;
+    margin-top: -6px;
+    width: 32px;
+    height: 32px;
+    background-color: #000000;
+
+    border: 1px solid #000000;
+    -webkit-border-radius: 4px;    /* for Safari */
+    -moz-border-radius: 4px;       /* for Firefox */
+    
+}
+
+.rounded
+{
+
+    -webkit-border-radius: 4px;    /* for Safari */
+    -moz-border-radius: 4px;       /* for Firefox */
+    
+}
+ 
+	</style>
+
+    
+    <script type="text/javascript">
+      //<![CDATA[
+
+    var commentForm = document.getElementById('submit');
+    var commentArea = commentForm.parentNode;
+    var captchafrm = document.getElementById("cResist");
+    commentArea.insertBefore(captchafrm, commentForm);
+    
+
+
+document.getElementById('comment').value = "";
+
+document.getElementById('author').value = '';
+document.getElementById('email').value = '';
+document.getElementById('url').value = '';
+
+
+    //]]>
+</script>
+   
+
+ <p style="display: none;"></p>
+<input type="hidden" id="ak_js" name="ak_js" value="1499280747199"></form>
+
+
+		
+			
+	</div><!--/post -->
+
+  </div><!--/content -->
+  
+  <div id="footer"><a href="http://www.ndesign-studio.com/resources/wp-themes/">WP Theme</a> &amp; <a href="http://www.ndesign-studio.com/stock-icons/">Icons</a> by <a href="http://www.ndesign-studio.com">N.Design Studio</a></div>
+</div><!--/left-col -->
+
+<div class="dbx-group" id="sidebar" style="position: relative; display: block;">
+
+  
+      <!--sidebox start -->
+      <div id="categories" class="dbx-box dbx-box-open dbxid0" style="position: relative; display: block;">
+        <h3 class="dbx-handle dbx-handle-cursor" title="click-down and drag to move this box" style="position: relative; display: block;">Categories<a href="javascript:void(null)" class="dbx-toggle dbx-toggle-open" title="click to close this box" style="cursor: pointer;">&nbsp;</a></h3>
+        <div class="dbx-content">
+          <ul>
+            	<li class="cat-item cat-item-7"><a href="http://www.blog.zapro.dk/?cat=7">Arduino</a> (1)
+</li>
+	<li class="cat-item cat-item-3"><a href="http://www.blog.zapro.dk/?cat=3">Electronics</a> (11)
+</li>
+	<li class="cat-item cat-item-5"><a href="http://www.blog.zapro.dk/?cat=5">General Hacks</a> (4)
+</li>
+	<li class="cat-item cat-item-6"><a href="http://www.blog.zapro.dk/?cat=6">Nixie</a> (1)
+</li>
+	<li class="cat-item cat-item-8"><a href="http://www.blog.zapro.dk/?cat=8">Teardown</a> (1)
+</li>
+	<li class="cat-item cat-item-1"><a href="http://www.blog.zapro.dk/?cat=1">Uncategorized</a> (6)
+</li>
+          </ul>
+        </div>
+      </div>
+      <!--sidebox end -->
+
+      <!--sidebox start -->
+      <div id="archives" class="dbx-box dbx-box-open dbxid1" style="position: relative; display: block;">
+        <h3 class="dbx-handle dbx-handle-cursor" title="click-down and drag to move this box" style="position: relative; display: block;">Archives<a href="javascript:void(null)" class="dbx-toggle dbx-toggle-open" title="click to close this box" style="cursor: pointer;">&nbsp;</a></h3>
+        <div class="dbx-content">
+          <ul>
+            	<li><a href="http://www.blog.zapro.dk/?m=201407">July 2014</a></li>
+	<li><a href="http://www.blog.zapro.dk/?m=201404">April 2014</a></li>
+	<li><a href="http://www.blog.zapro.dk/?m=201311">November 2013</a></li>
+	<li><a href="http://www.blog.zapro.dk/?m=201307">July 2013</a></li>
+	<li><a href="http://www.blog.zapro.dk/?m=201302">February 2013</a></li>
+	<li><a href="http://www.blog.zapro.dk/?m=201212">December 2012</a></li>
+	<li><a href="http://www.blog.zapro.dk/?m=201202">February 2012</a></li>
+	<li><a href="http://www.blog.zapro.dk/?m=201201">January 2012</a></li>
+	<li><a href="http://www.blog.zapro.dk/?m=201107">July 2011</a></li>
+	<li><a href="http://www.blog.zapro.dk/?m=201106">June 2011</a></li>
+	<li><a href="http://www.blog.zapro.dk/?m=201105">May 2011</a></li>
+	<li><a href="http://www.blog.zapro.dk/?m=201101">January 2011</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--sidebox end -->
+
+      <!--sidebox start -->
+      <div id="links" class="dbx-box dbx-box-open dbxid2" style="position: relative; display: block;">
+        <h3 class="dbx-handle dbx-handle-cursor" title="click-down and drag to move this box" style="position: relative; display: block;">Links<a href="javascript:void(null)" class="dbx-toggle dbx-toggle-open" title="click to close this box" style="cursor: pointer;">&nbsp;</a></h3>
+        <div class="dbx-content">
+          <ul>
+            <li><a href="http://www.hackedgadgets.com" title="hackedgadgets.com">Hackedgadgets.com</a></li>
+<li><a href="http://www.hackaday.com" title="Hackaday">Hackaday.com</a></li>
+<li><a href="http://gizmodo.com" title="Gizmodo">Gizmodo</a></li>
+<li><a href="http://hack247.co.uk" title="Hack 247">Hack 247</a></li>
+<li><a href="http://blog.screamingcircuits.com/" title="Screaming Circuits">Screaming Circuits</a></li>
+<li><a href="http://englishrussia.com/">English-Russia</a></li>
+<li><a href="http://electronics-diy.com/">Electronics DIY</a></li>
+<li><a href="http://tinkerlog.com/">Tinkerlog</a></li>
+<li><a href="http://thewoodwhisperer.com/">The Wood Whisperer</a></li>
+<li><a href="http://blog.frands.net/?page_id=37" title="Frands’ recipe for remote help">Remote Help</a></li>
+<li><a href="http://www.engadget.com/">Engadget</a></li>
+<li><a href="http://woodgears.ca/" title="Cool wooden work">Woodgears</a></li>
+<li><a href="http://strobist.blogspot.com/">Strobist</a></li>
+<li><a href="http://manualfocus.org/">Manual Focus</a></li>
+<li><a href="http://www.brinck.dk" title="My work">Brinck Elektronik</a></li>
+<li><a href="http://www.labitat.dk" title="My local Hackerspace">Labitat</a></li>
+<li><a href="http://gallery.zapro.dk" title="My webgallery">Zapro Gallery</a></li>
+<li><a href="http://nootropicdesign.com/" title="Very cool projects!">NooTropicDesign</a></li>
+<li><a href="http://www.open-electronics.org/" title="Open source electronics projects">open-electronics</a></li>
+<li><a href="http://www.elektronikforumet.com/" title="An electronic forum in Sweden">Elektronikforumet</a></li>
+<li><a href="http://www.imaginaryindustries.com/blog/" target="_blank">The ramblings of Connor Wolf</a></li>
+<li><a href="http://hawkins.pair.com/" title="Amazing tours of Radio Transmitters" target="_blank">The homepage of Jim Hawkins – Amazing tours of Radio Transmitters</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--sidebox end -->
+
+      <!--sidebox start -->
+      <div id="meta" class="dbx-box dbx-box-open dbxid3" style="position: relative; display: block;">
+        <h3 class="dbx-handle dbx-handle-cursor" title="click-down and drag to move this box" style="position: relative; display: block;">Meta<a href="javascript:void(null)" class="dbx-toggle dbx-toggle-open" title="click to close this box" style="cursor: pointer;">&nbsp;</a></h3>
+        <div class="dbx-content">
+          <ul>
+              <li class="rss"><a href="http://www.blog.zapro.dk/?feed=rss2">Entries (RSS)</a></li>
+              <li class="rss"><a href="http://www.blog.zapro.dk/?feed=comments-rss2">Comments (RSS)</a></li>
+              <li class="wordpress"><a href="http://www.wordpress.org" title="Powered by WordPress">WordPress</a></li>
+              <li class="login"><a href="http://www.blog.zapro.dk/wp-login.php">Log in</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--sidebox end -->
+
+  
+<span class="dbx-box dbx-dummy dbx-offdummy" style="display: block; width: 0px; height: 0px; overflow: hidden;"></span></div><!--/sidebar -->  
+    <hr class="hidden">
+
+  </div><!--/wrapper -->
+
+</div><!--/page -->
+
+<script type="text/javascript" src="http://www.blog.zapro.dk/wp-content/plugins/akismet/_inc/form.js?ver=3.1.5"></script>
+
+
+</body></html>

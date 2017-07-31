@@ -1,0 +1,59 @@
+<html><head>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+a.news{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; color:#000000; text-decoration:none}
+a.news:hover{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; color:#006699; text-decoration:none}
+
+
+
+</style>
+</head>
+<body background="images/new_bg.jpg" marginwidth="0" marginheight="0">
+
+<div id="datacontainer" style="position: absolute; left: 4px; top: -172px; width: 100%;" onmouseover="scrollspeed=0" onmouseout="scrollspeed=cache">
+<a class="news" href="view_news.php?id=19" target="_blank"><span class="normal">Article in Style.com</span></a><br><br><a class="news" href="view_news.php?id=18" target="_blank"><span class="normal"></span></a><a href="docs/Anniversary.pdf" target="_new" class="news"> <span class="normal">1st Anniversary Celebration</span> </a><br><br><a class="news" href="view_news.php?id=17" target="_blank"><span class="normal">Article in Richmond.com</span></a><br><br><a class="news" href="view_news.php?id=16" target="_blank"><span class="normal">Indian-Style Panera</span></a><br><br><a class="news" href="view_news.php?id=14" target="_blank"><span class="normal"></span></a><a href="docs/IPHflyer.pdf" target="_new" class="news"> <span class="normal">Indian Pastry House Flyer</span> </a><br><br><a class="news" href="view_news.php?id=13" target="_blank"><span class="normal"></span></a><a href="docs/partyhall.pdf" target="_new" class="news"><span class="normal"> Partyhall Reservation &amp; Rules</span> </a><br><br>
+</div>
+
+<script type="text/javascript">
+
+
+
+//Specify speed of scroll. Larger=faster (ie: 5)
+var scrollspeed=cache=1
+
+//Specify intial delay before scroller starts scrolling (in miliseconds):
+var initialdelay=500
+
+function initializeScroller(){
+dataobj=document.all? document.all.datacontainer : document.getElementById("datacontainer")
+dataobj.style.top="80px"
+setTimeout("getdataheight()", initialdelay)
+}
+
+function getdataheight(){
+thelength=dataobj.offsetHeight
+if (thelength==0)
+setTimeout("getdataheight()",10)
+else
+scrollDiv()
+}
+
+function scrollDiv(){
+dataobj.style.top=parseInt(dataobj.style.top)-scrollspeed+"px"
+if (parseInt(dataobj.style.top)<thelength*(-1))
+dataobj.style.top="150px"
+setTimeout("scrollDiv()",40)
+}
+
+if (window.addEventListener)
+window.addEventListener("load", initializeScroller, false)
+else if (window.attachEvent)
+window.attachEvent("onload", initializeScroller)
+else
+window.onload=initializeScroller
+
+</script>
+
+
+
+</body></html>
