@@ -1,0 +1,8 @@
+{"keywords":"Food and Nutrition business,food pharmacy,food pharmacy blog,eat,vegetables","width":"0","height":"0","level":"info","message":"Got new request. Id: 4dce9b28-e372-48af-9758-0c845257d138","timestamp":"2017-07-03T20:50:22.410Z"}
+{"level":"info","message":"Request Id: 4dce9b28-e372-48af-9758-0c845257d138 Validating request ","timestamp":"2017-07-03T20:50:22.412Z"}
+{"level":"info","message":"Request Id 4dce9b28-e372-48af-9758-0c845257d138 Keywords food+and+nutrition+business,food+pharmacy,food+pharmacy+blog,eat,vegetables Color: all Type: all","timestamp":"2017-07-03T20:50:22.424Z"}
+{"level":"info","message":"Request Id: 4dce9b28-e372-48af-9758-0c845257d138 Getting images from cache","timestamp":"2017-07-03T20:50:22.424Z"}
+{"keywords":"","width":"700","height":"525","level":"info","message":"Got new request. Id: da2b79a9-262a-4a5d-b800-87ac3e228480","timestamp":"2017-07-03T20:50:22.425Z"}
+{"level":"info","message":"Request Id: da2b79a9-262a-4a5d-b800-87ac3e228480 Validating request ","timestamp":"2017-07-03T20:50:22.426Z"}
+{"level":"error","message":"Request Id: da2b79a9-262a-4a5d-b800-87ac3e228480 Invalid keywords","timestamp":"2017-07-03T20:50:22.426Z"}
+{"level":"error","message":"Request Id: 4dce9b28-e372-48af-9758-0c845257d138 No images were returned by sources! Check keywords","timestamp":"2017-07-03T20:50:34.901Z"}

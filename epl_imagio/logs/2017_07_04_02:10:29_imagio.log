@@ -1,0 +1,5 @@
+{"keywords":"Food and Nutrition business,food pharmacy,food pharmacy blog,eat,vegetables","width":"0","height":"0","level":"info","message":"Got new request. Id: ff874123-a0d0-476f-8a2e-88d2da922e69","timestamp":"2017-07-03T20:40:32.843Z"}
+{"level":"info","message":"Request Id: ff874123-a0d0-476f-8a2e-88d2da922e69 Validating request ","timestamp":"2017-07-03T20:40:32.846Z"}
+{"level":"info","message":"Request Id ff874123-a0d0-476f-8a2e-88d2da922e69 Keywords NaNaood+and+NaNautrition+business,food+pharmacy,food+pharmacy+blog,eat,vegetables Color: all Type: all","timestamp":"2017-07-03T20:40:32.860Z"}
+{"level":"info","message":"Request Id: ff874123-a0d0-476f-8a2e-88d2da922e69 Getting images from cache","timestamp":"2017-07-03T20:40:32.860Z"}
+{"level":"error","message":"Request Id: ff874123-a0d0-476f-8a2e-88d2da922e69 No images were returned by sources! Check keywords","timestamp":"2017-07-03T20:40:39.107Z"}

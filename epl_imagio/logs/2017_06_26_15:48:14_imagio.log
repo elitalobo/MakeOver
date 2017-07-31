@@ -1,0 +1,5 @@
+{"keywords":"blue","level":"info","message":"Got new request. Id: dd0d76bf-5c0f-4d17-bd6d-1cfd7ff2121c","timestamp":"2017-06-26T10:18:17.547Z"}
+{"level":"info","message":"Request Id: dd0d76bf-5c0f-4d17-bd6d-1cfd7ff2121c Validating request ","timestamp":"2017-06-26T10:18:17.550Z"}
+{"level":"info","message":"Request Id dd0d76bf-5c0f-4d17-bd6d-1cfd7ff2121c Keywords blue Color: all Type: all","timestamp":"2017-06-26T10:18:17.550Z"}
+{"level":"info","message":"Request Id: dd0d76bf-5c0f-4d17-bd6d-1cfd7ff2121c Getting images from cache","timestamp":"2017-06-26T10:18:17.550Z"}
+{"total_no_of_images":90,"level":"info","message":"Request Id: dd0d76bf-5c0f-4d17-bd6d-1cfd7ff2121c Got images from sources ","timestamp":"2017-06-26T10:18:20.633Z"}

@@ -1,0 +1,5 @@
+{"keywords":"cat","level":"info","message":"Got new request. Id: 791154f1-3d9d-400a-8957-e045c2c51ddb","timestamp":"2017-02-03T11:02:13.173Z"}
+{"level":"info","message":"Request Id: 791154f1-3d9d-400a-8957-e045c2c51ddb Validating request ","timestamp":"2017-02-03T11:02:13.175Z"}
+{"level":"info","message":"Request Id 791154f1-3d9d-400a-8957-e045c2c51ddb Keywords cat Color: all Type: all","timestamp":"2017-02-03T11:02:13.176Z"}
+{"level":"info","message":"Request Id: 791154f1-3d9d-400a-8957-e045c2c51ddb Getting images from cache","timestamp":"2017-02-03T11:02:13.176Z"}
+{"level":"error","message":"Request Id: 791154f1-3d9d-400a-8957-e045c2c51ddb No images were returned by sources! Check keywords","timestamp":"2017-02-03T11:02:14.502Z"}

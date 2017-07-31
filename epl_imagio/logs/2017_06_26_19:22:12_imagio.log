@@ -1,0 +1,5 @@
+{"keywords":"chromosomes","level":"info","message":"Got new request. Id: ef6543e8-295c-43d3-8dac-77dfa09d75c2","timestamp":"2017-06-26T13:52:16.172Z"}
+{"level":"info","message":"Request Id: ef6543e8-295c-43d3-8dac-77dfa09d75c2 Validating request ","timestamp":"2017-06-26T13:52:16.174Z"}
+{"level":"info","message":"Request Id ef6543e8-295c-43d3-8dac-77dfa09d75c2 Keywords chromosomes Color: all Type: all","timestamp":"2017-06-26T13:52:16.174Z"}
+{"level":"info","message":"Request Id: ef6543e8-295c-43d3-8dac-77dfa09d75c2 Getting images from cache","timestamp":"2017-06-26T13:52:16.174Z"}
+{"total_no_of_images":54,"level":"info","message":"Request Id: ef6543e8-295c-43d3-8dac-77dfa09d75c2 Got images from sources ","timestamp":"2017-06-26T13:52:18.918Z"}

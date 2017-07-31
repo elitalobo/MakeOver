@@ -1,0 +1,5 @@
+{"keywords":"cat","level":"info","message":"Got new request. Id: 53b26b27-3dc9-494f-982b-90929d4fa5a4","timestamp":"2017-02-03T10:49:20.577Z"}
+{"level":"info","message":"Request Id: 53b26b27-3dc9-494f-982b-90929d4fa5a4 Validating request ","timestamp":"2017-02-03T10:49:20.583Z"}
+{"level":"info","message":"Request Id 53b26b27-3dc9-494f-982b-90929d4fa5a4 Keywords cat Color: all Type: all","timestamp":"2017-02-03T10:49:20.584Z"}
+{"level":"info","message":"Request Id: 53b26b27-3dc9-494f-982b-90929d4fa5a4 Getting images from cache","timestamp":"2017-02-03T10:49:20.584Z"}
+{"level":"error","message":"Request Id: 53b26b27-3dc9-494f-982b-90929d4fa5a4 No images were returned by sources! Check keywords","timestamp":"2017-02-03T10:49:22.096Z"}

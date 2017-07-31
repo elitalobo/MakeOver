@@ -1,0 +1,195 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Image Search Service",
+        "description": "Allows users to search images based on keywords and filter by color and type",
+        "version": "1.0.0"
+    },
+    "host": "0.0.0.0:8080",
+    "schemes": [
+        "https"
+    ],
+    "basePath": "/images",
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/search": {
+            "get": {
+                "summary": "Image Search",
+                "description": "The Search endpoint allows you to search images using keywords and filters like color and type.\n",
+                "parameters": [
+                    {
+                        "name": "keywords",
+                        "in": "query",
+                        "description": "keywords associated with images to be searched",
+                        "required": true,
+                        "type": "string",
+                        "format": "comma seperated"
+                    },
+                    {
+                        "name": "color",
+                        "in": "query",
+                        "description": "dominant color of image",
+                        "required": false,
+                        "type": "string",
+                        "format": "one of the 12 standard colors"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "type of objects in image",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "tags": [
+                    "Images"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns JSON containing status and array of images.",
+                        "schema": {
+                            "$ref": "#/definitions/Result"
+                        }
+                    },
+                    "400": {
+                        "description": "Returns JSON containing error message and status code.",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "500": {
+                        "description": "Returns JSON containing error message and status code.",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "Image": {
+            "type": "object",
+            "properties": {
+                "urls": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Image_Url"
+                    },
+                    "description": "Each url object consist of image url and size of url"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Description of Image."
+                },
+                "tags": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Tag"
+                    },
+                    "description": "array of tags"
+                },
+                "source": {
+                    "type": "string",
+                    "description": "Source of image."
+                },
+                "colors": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Color"
+                    },
+                    "description": "Array of dominant colors"
+                },
+                "types": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Type"
+                    },
+                    "description": "Array of types."
+                }
+            }
+        },
+        "Image_Url": {
+            "type": "object",
+            "properties": {
+                "height": {
+                    "type": "integer",
+                    "description": "height of image"
+                },
+                "width": {
+                    "type": "integer",
+                    "description": "width of image"
+                }
+            }
+        },
+        "Tag": {
+            "type": "object",
+            "properties": {
+                "tagName": {
+                    "type": "string",
+                    "description": "name of tag"
+                }
+            }
+        },
+        "Color": {
+            "type": "object",
+            "properties": {
+                "r": {
+                    "type": "integer",
+                    "description": "red"
+                },
+                "g": {
+                    "type": "integer",
+                    "description": "green"
+                },
+                "b": {
+                    "type": "integer",
+                    "description": "blue"
+                }
+            }
+        },
+        "Type": {
+            "type": "object",
+            "properties": {
+                "Type": {
+                    "type": "string",
+                    "description": "type of objects in image"
+                },
+                "Score": {
+                    "type": "string",
+                    "description": "probability that an object of this type exists in the image"
+                }
+            }
+        },
+        "Result": {
+            "type": "object",
+            "properties": {
+                "Results": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Image"
+                    },
+                    "description": "An array of Images"
+                },
+                "status": {
+                    "type": "string",
+                    "description": "status of request"
+                }
+            }
+        },
+        "Error": {
+            "type": "object",
+            "properties": {
+                "status_code": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "message": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

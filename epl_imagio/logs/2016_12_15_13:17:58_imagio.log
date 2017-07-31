@@ -1,0 +1,5 @@
+{"keywords":"cat","level":"info","message":"Got new request. Id: dea4fd04-39c5-4c69-8e63-fb9f06f619a4","timestamp":"2016-12-15T07:48:05.442Z"}
+{"level":"info","message":"Request Id: dea4fd04-39c5-4c69-8e63-fb9f06f619a4 Validating request ","timestamp":"2016-12-15T07:48:05.446Z"}
+{"level":"info","message":"Request Id dea4fd04-39c5-4c69-8e63-fb9f06f619a4 Keywords cat Color: all Type: all","timestamp":"2016-12-15T07:48:05.446Z"}
+{"level":"info","message":"Request Id: dea4fd04-39c5-4c69-8e63-fb9f06f619a4 Getting images from cache","timestamp":"2016-12-15T07:48:05.446Z"}
+{"level":"error","message":"Request Id: dea4fd04-39c5-4c69-8e63-fb9f06f619a4 No images were returned by sources! Check keywords","timestamp":"2016-12-15T07:48:07.518Z"}

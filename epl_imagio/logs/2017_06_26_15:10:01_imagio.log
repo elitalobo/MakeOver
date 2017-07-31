@@ -1,0 +1,8 @@
+{"keywords":"\"red\"","level":"info","message":"Got new request. Id: 8131be01-6cf2-47c7-9b84-70c999ea9fc7","timestamp":"2017-06-26T09:40:57.990Z"}
+{"level":"info","message":"Request Id: 8131be01-6cf2-47c7-9b84-70c999ea9fc7 Validating request ","timestamp":"2017-06-26T09:40:57.994Z"}
+{"level":"error","message":"Request Id: 8131be01-6cf2-47c7-9b84-70c999ea9fc7 Invalid keywords","timestamp":"2017-06-26T09:40:57.995Z"}
+{"keywords":"blue","level":"info","message":"Got new request. Id: e2c990e2-94be-41a6-92d2-2d03207535f6","timestamp":"2017-06-26T09:41:04.403Z"}
+{"level":"info","message":"Request Id: e2c990e2-94be-41a6-92d2-2d03207535f6 Validating request ","timestamp":"2017-06-26T09:41:04.405Z"}
+{"level":"info","message":"Request Id e2c990e2-94be-41a6-92d2-2d03207535f6 Keywords blue Color: all Type: all","timestamp":"2017-06-26T09:41:04.406Z"}
+{"level":"info","message":"Request Id: e2c990e2-94be-41a6-92d2-2d03207535f6 Getting images from cache","timestamp":"2017-06-26T09:41:04.406Z"}
+{"total_no_of_images":90,"level":"info","message":"Request Id: e2c990e2-94be-41a6-92d2-2d03207535f6 Got images from sources ","timestamp":"2017-06-26T09:41:10.837Z"}

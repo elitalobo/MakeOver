@@ -1,0 +1,5 @@
+{"keywords":"astroids","level":"info","message":"Got new request. Id: e1093561-44e2-4351-903b-fca6887805cd","timestamp":"2017-06-26T15:10:46.914Z"}
+{"level":"info","message":"Request Id: e1093561-44e2-4351-903b-fca6887805cd Validating request ","timestamp":"2017-06-26T15:10:46.916Z"}
+{"level":"info","message":"Request Id e1093561-44e2-4351-903b-fca6887805cd Keywords astroids Color: all Type: all","timestamp":"2017-06-26T15:10:46.916Z"}
+{"level":"info","message":"Request Id: e1093561-44e2-4351-903b-fca6887805cd Getting images from cache","timestamp":"2017-06-26T15:10:46.916Z"}
+{"total_no_of_images":20,"level":"info","message":"Request Id: e1093561-44e2-4351-903b-fca6887805cd Got images from sources ","timestamp":"2017-06-26T15:10:49.452Z"}

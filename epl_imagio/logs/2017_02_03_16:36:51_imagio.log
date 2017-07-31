@@ -1,0 +1,5 @@
+{"keywords":"cat","level":"info","message":"Got new request. Id: 23158827-0055-4ecf-9d83-4899b403fc04","timestamp":"2017-02-03T11:06:54.217Z"}
+{"level":"info","message":"Request Id: 23158827-0055-4ecf-9d83-4899b403fc04 Validating request ","timestamp":"2017-02-03T11:06:54.221Z"}
+{"level":"info","message":"Request Id 23158827-0055-4ecf-9d83-4899b403fc04 Keywords cat Color: all Type: all","timestamp":"2017-02-03T11:06:54.222Z"}
+{"level":"info","message":"Request Id: 23158827-0055-4ecf-9d83-4899b403fc04 Getting images from cache","timestamp":"2017-02-03T11:06:54.222Z"}
+{"message":"Uncaught Exception","stack":"TypeError: Cannot read property '_attributes' of undefined\n    at IncomingMessage.<anonymous> (/home/elital/epl_imagio/src/routes/rf123.js:53:39)\n    at emitNone (events.js:72:20)\n    at IncomingMessage.emit (events.js:166:7)\n    at endReadableNT (_stream_readable.js:905:12)\n    at nextTickCallbackWith2Args (node.js:441:9)\n    at process._tickCallback (node.js:355:17)","level":"error","timestamp":"2017-02-03T11:06:55.659Z"}

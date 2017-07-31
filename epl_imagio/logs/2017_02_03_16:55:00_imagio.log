@@ -1,0 +1,5 @@
+{"keywords":"cat","level":"info","message":"Got new request. Id: 3d2921da-d2dc-42d9-9160-9ccdbffa60b3","timestamp":"2017-02-03T11:25:04.159Z"}
+{"level":"info","message":"Request Id: 3d2921da-d2dc-42d9-9160-9ccdbffa60b3 Validating request ","timestamp":"2017-02-03T11:25:04.163Z"}
+{"level":"info","message":"Request Id 3d2921da-d2dc-42d9-9160-9ccdbffa60b3 Keywords cat Color: all Type: all","timestamp":"2017-02-03T11:25:04.164Z"}
+{"level":"info","message":"Request Id: 3d2921da-d2dc-42d9-9160-9ccdbffa60b3 Getting images from cache","timestamp":"2017-02-03T11:25:04.164Z"}
+{"total_no_of_images":29,"level":"info","message":"Request Id: 3d2921da-d2dc-42d9-9160-9ccdbffa60b3 Got images from sources ","timestamp":"2017-02-03T11:25:04.825Z"}

@@ -1,0 +1,10 @@
+{"keywords":"chromosomes","level":"info","message":"Got new request. Id: 939ab013-ff01-4d3e-9913-d63625238ab4","timestamp":"2017-06-26T14:36:09.442Z"}
+{"level":"info","message":"Request Id: 939ab013-ff01-4d3e-9913-d63625238ab4 Validating request ","timestamp":"2017-06-26T14:36:09.447Z"}
+{"level":"info","message":"Request Id 939ab013-ff01-4d3e-9913-d63625238ab4 Keywords chromosomes Color: all Type: all","timestamp":"2017-06-26T14:36:09.448Z"}
+{"level":"info","message":"Request Id: 939ab013-ff01-4d3e-9913-d63625238ab4 Getting images from cache","timestamp":"2017-06-26T14:36:09.448Z"}
+{"total_no_of_images":40,"level":"info","message":"Request Id: 939ab013-ff01-4d3e-9913-d63625238ab4 Got images from sources ","timestamp":"2017-06-26T14:36:12.936Z"}
+{"keywords":"chromosomes","level":"info","message":"Got new request. Id: 78d5c18b-c832-467d-94e3-56eafacc0c49","timestamp":"2017-06-26T14:38:09.510Z"}
+{"level":"info","message":"Request Id: 78d5c18b-c832-467d-94e3-56eafacc0c49 Validating request ","timestamp":"2017-06-26T14:38:09.512Z"}
+{"level":"info","message":"Request Id 78d5c18b-c832-467d-94e3-56eafacc0c49 Keywords chromosomes Color: all Type: all","timestamp":"2017-06-26T14:38:09.512Z"}
+{"level":"info","message":"Request Id: 78d5c18b-c832-467d-94e3-56eafacc0c49 Getting images from cache","timestamp":"2017-06-26T14:38:09.513Z"}
+{"total_no_of_images":40,"level":"info","message":"Request Id: 78d5c18b-c832-467d-94e3-56eafacc0c49 Got images from sources ","timestamp":"2017-06-26T14:38:12.156Z"}

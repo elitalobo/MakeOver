@@ -1,0 +1,13 @@
+{"level":"info","message":"Got new request. Id: 05acbc73-ea07-4398-b199-f146d72a10db","timestamp":"2017-06-13T05:54:07.236Z"}
+{"level":"error","message":"Request Id: 05acbc73-ea07-4398-b199-f146d72a10db No keywords found! ","timestamp":"2017-06-13T05:54:07.243Z"}
+{"keywords":"\"re\"","level":"info","message":"Got new request. Id: 906746a0-b180-41d9-8f11-e6267d940dc6","timestamp":"2017-06-13T05:54:17.763Z"}
+{"level":"info","message":"Request Id: 906746a0-b180-41d9-8f11-e6267d940dc6 Validating request ","timestamp":"2017-06-13T05:54:17.765Z"}
+{"level":"error","message":"Request Id: 906746a0-b180-41d9-8f11-e6267d940dc6 Invalid keywords","timestamp":"2017-06-13T05:54:17.766Z"}
+{"keywords":"\"red\"","level":"info","message":"Got new request. Id: aa5fd2df-82ec-49d1-aaba-7fdd7b51bcf1","timestamp":"2017-06-13T05:54:24.988Z"}
+{"level":"info","message":"Request Id: aa5fd2df-82ec-49d1-aaba-7fdd7b51bcf1 Validating request ","timestamp":"2017-06-13T05:54:24.989Z"}
+{"level":"error","message":"Request Id: aa5fd2df-82ec-49d1-aaba-7fdd7b51bcf1 Invalid keywords","timestamp":"2017-06-13T05:54:24.989Z"}
+{"keywords":"red","level":"info","message":"Got new request. Id: eddcbb06-b9e5-43ba-96fb-a7a211a1082e","timestamp":"2017-06-13T05:54:29.997Z"}
+{"level":"info","message":"Request Id: eddcbb06-b9e5-43ba-96fb-a7a211a1082e Validating request ","timestamp":"2017-06-13T05:54:29.999Z"}
+{"level":"info","message":"Request Id eddcbb06-b9e5-43ba-96fb-a7a211a1082e Keywords red Color: all Type: all","timestamp":"2017-06-13T05:54:29.999Z"}
+{"level":"info","message":"Request Id: eddcbb06-b9e5-43ba-96fb-a7a211a1082e Getting images from cache","timestamp":"2017-06-13T05:54:30.000Z"}
+{"total_no_of_images":90,"level":"info","message":"Request Id: eddcbb06-b9e5-43ba-96fb-a7a211a1082e Got images from sources ","timestamp":"2017-06-13T05:54:38.212Z"}

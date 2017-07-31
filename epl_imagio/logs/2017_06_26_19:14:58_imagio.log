@@ -1,0 +1,5 @@
+{"keywords":"domain renewal","level":"info","message":"Got new request. Id: bae64bd6-e195-4a47-b449-8f731fb49a4b","timestamp":"2017-06-26T13:45:08.264Z"}
+{"level":"info","message":"Request Id: bae64bd6-e195-4a47-b449-8f731fb49a4b Validating request ","timestamp":"2017-06-26T13:45:08.269Z"}
+{"level":"info","message":"Request Id bae64bd6-e195-4a47-b449-8f731fb49a4b Keywords domain+renewal Color: all Type: all","timestamp":"2017-06-26T13:45:08.270Z"}
+{"level":"info","message":"Request Id: bae64bd6-e195-4a47-b449-8f731fb49a4b Getting images from cache","timestamp":"2017-06-26T13:45:08.270Z"}
+{"total_no_of_images":29,"level":"info","message":"Request Id: bae64bd6-e195-4a47-b449-8f731fb49a4b Got images from sources ","timestamp":"2017-06-26T13:45:11.684Z"}

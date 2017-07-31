@@ -1,0 +1,5 @@
+{"keywords":"cat","level":"info","message":"Got new request. Id: 14224d24-8d32-4250-9c6a-df9337d9d93c","timestamp":"2016-12-08T05:28:10.416Z"}
+{"level":"info","message":"Request Id: 14224d24-8d32-4250-9c6a-df9337d9d93c Validating request ","timestamp":"2016-12-08T05:28:10.419Z"}
+{"level":"info","message":"Request Id 14224d24-8d32-4250-9c6a-df9337d9d93c Keywords cat Color: all Type: all","timestamp":"2016-12-08T05:28:10.419Z"}
+{"level":"info","message":"Request Id: 14224d24-8d32-4250-9c6a-df9337d9d93c Getting images from cache","timestamp":"2016-12-08T05:28:10.420Z"}
+{"total_no_of_images":60,"level":"info","message":"Request Id: 14224d24-8d32-4250-9c6a-df9337d9d93c Got images from sources ","timestamp":"2016-12-08T05:28:12.750Z"}

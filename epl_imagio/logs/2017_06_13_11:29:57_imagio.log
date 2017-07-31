@@ -1,0 +1,5 @@
+{"keywords":"red","level":"info","message":"Got new request. Id: a86203d3-5edf-4a6d-851f-c3530a0f8f99","timestamp":"2017-06-13T06:00:04.373Z"}
+{"level":"info","message":"Request Id: a86203d3-5edf-4a6d-851f-c3530a0f8f99 Validating request ","timestamp":"2017-06-13T06:00:04.376Z"}
+{"level":"info","message":"Request Id a86203d3-5edf-4a6d-851f-c3530a0f8f99 Keywords red Color: all Type: all","timestamp":"2017-06-13T06:00:04.376Z"}
+{"level":"info","message":"Request Id: a86203d3-5edf-4a6d-851f-c3530a0f8f99 Getting images from cache","timestamp":"2017-06-13T06:00:04.377Z"}
+{"total_no_of_images":90,"level":"info","message":"Request Id: a86203d3-5edf-4a6d-851f-c3530a0f8f99 Got images from sources ","timestamp":"2017-06-13T06:00:06.282Z"}

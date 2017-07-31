@@ -1,0 +1,10 @@
+{"keywords":"chromosomes","level":"info","message":"Got new request. Id: 4c1f6875-6b0e-4761-bbda-682a26bacad7","timestamp":"2017-06-26T15:26:57.084Z"}
+{"level":"info","message":"Request Id: 4c1f6875-6b0e-4761-bbda-682a26bacad7 Validating request ","timestamp":"2017-06-26T15:26:57.085Z"}
+{"level":"info","message":"Request Id 4c1f6875-6b0e-4761-bbda-682a26bacad7 Keywords chromosomes Color: all Type: all","timestamp":"2017-06-26T15:26:57.086Z"}
+{"level":"info","message":"Request Id: 4c1f6875-6b0e-4761-bbda-682a26bacad7 Getting images from cache","timestamp":"2017-06-26T15:26:57.086Z"}
+{"total_no_of_images":40,"level":"info","message":"Request Id: 4c1f6875-6b0e-4761-bbda-682a26bacad7 Got images from sources ","timestamp":"2017-06-26T15:26:59.820Z"}
+{"keywords":"chromosomes","level":"info","message":"Got new request. Id: 4d4b5239-f3ff-44e4-a2b3-15af5b6c2580","timestamp":"2017-06-26T15:27:22.106Z"}
+{"level":"info","message":"Request Id: 4d4b5239-f3ff-44e4-a2b3-15af5b6c2580 Validating request ","timestamp":"2017-06-26T15:27:22.106Z"}
+{"level":"info","message":"Request Id 4d4b5239-f3ff-44e4-a2b3-15af5b6c2580 Keywords chromosomes Color: all Type: all","timestamp":"2017-06-26T15:27:22.107Z"}
+{"level":"info","message":"Request Id: 4d4b5239-f3ff-44e4-a2b3-15af5b6c2580 Getting images from cache","timestamp":"2017-06-26T15:27:22.107Z"}
+{"total_no_of_images":40,"level":"info","message":"Request Id: 4d4b5239-f3ff-44e4-a2b3-15af5b6c2580 Got images from sources ","timestamp":"2017-06-26T15:27:25.000Z"}

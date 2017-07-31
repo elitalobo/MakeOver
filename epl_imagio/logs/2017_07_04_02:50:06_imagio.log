@@ -1,0 +1,16 @@
+{"keywords":"food nutrition,food pharmacy,food pharmacy blog,vegetables","width":"0","height":"0","level":"info","message":"Got new request. Id: e036ed71-5a1a-4edc-abb0-f538768c0f3f","timestamp":"2017-07-03T21:20:47.325Z"}
+{"level":"info","message":"Request Id: e036ed71-5a1a-4edc-abb0-f538768c0f3f Validating request ","timestamp":"2017-07-03T21:20:47.327Z"}
+{"level":"info","message":"Request Id e036ed71-5a1a-4edc-abb0-f538768c0f3f Keywords food+nutrition,food+pharmacy,food+pharmacy+blog,vegetables Color: all Type: all","timestamp":"2017-07-03T21:20:47.337Z"}
+{"level":"info","message":"Request Id: e036ed71-5a1a-4edc-abb0-f538768c0f3f Getting images from cache","timestamp":"2017-07-03T21:20:47.337Z"}
+{"keywords":"","width":"700","height":"525","level":"info","message":"Got new request. Id: cc5a1100-0479-4f40-81fd-d9219878753d","timestamp":"2017-07-03T21:20:47.363Z"}
+{"level":"info","message":"Request Id: cc5a1100-0479-4f40-81fd-d9219878753d Validating request ","timestamp":"2017-07-03T21:20:47.363Z"}
+{"level":"error","message":"Request Id: cc5a1100-0479-4f40-81fd-d9219878753d Invalid keywords","timestamp":"2017-07-03T21:20:47.364Z"}
+{"keywords":"food nutrition,food pharmacy,food pharmacy blog,vegetables","width":"0","height":"0","level":"info","message":"Got new request. Id: daf509ab-11ed-449a-b8a0-e35848141759","timestamp":"2017-07-03T21:20:47.368Z"}
+{"level":"info","message":"Request Id: daf509ab-11ed-449a-b8a0-e35848141759 Validating request ","timestamp":"2017-07-03T21:20:47.368Z"}
+{"level":"info","message":"Request Id daf509ab-11ed-449a-b8a0-e35848141759 Keywords food+nutrition,food+pharmacy,food+pharmacy+blog,vegetables Color: all Type: all","timestamp":"2017-07-03T21:20:47.373Z"}
+{"level":"info","message":"Request Id: daf509ab-11ed-449a-b8a0-e35848141759 Getting images from cache","timestamp":"2017-07-03T21:20:47.373Z"}
+{"keywords":"","width":"700","height":"525","level":"info","message":"Got new request. Id: dc58a169-1631-4e6f-bb2d-8910f643919b","timestamp":"2017-07-03T21:20:47.374Z"}
+{"level":"info","message":"Request Id: dc58a169-1631-4e6f-bb2d-8910f643919b Validating request ","timestamp":"2017-07-03T21:20:47.374Z"}
+{"level":"error","message":"Request Id: dc58a169-1631-4e6f-bb2d-8910f643919b Invalid keywords","timestamp":"2017-07-03T21:20:47.374Z"}
+{"level":"error","message":"Request Id: daf509ab-11ed-449a-b8a0-e35848141759 No images were returned by sources! Check keywords","timestamp":"2017-07-03T21:20:54.656Z"}
+{"level":"error","message":"Request Id: e036ed71-5a1a-4edc-abb0-f538768c0f3f No images were returned by sources! Check keywords","timestamp":"2017-07-03T21:20:54.682Z"}

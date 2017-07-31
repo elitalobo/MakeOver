@@ -1,0 +1,10 @@
+{"keywords":"chromosomes","level":"info","message":"Got new request. Id: 833fbeaa-cab0-414f-8fd6-eb86b1b9272f","timestamp":"2017-06-26T14:26:34.413Z"}
+{"level":"info","message":"Request Id: 833fbeaa-cab0-414f-8fd6-eb86b1b9272f Validating request ","timestamp":"2017-06-26T14:26:34.415Z"}
+{"level":"info","message":"Request Id 833fbeaa-cab0-414f-8fd6-eb86b1b9272f Keywords chromosomes Color: all Type: all","timestamp":"2017-06-26T14:26:34.415Z"}
+{"level":"info","message":"Request Id: 833fbeaa-cab0-414f-8fd6-eb86b1b9272f Getting images from cache","timestamp":"2017-06-26T14:26:34.415Z"}
+{"total_no_of_images":40,"level":"info","message":"Request Id: 833fbeaa-cab0-414f-8fd6-eb86b1b9272f Got images from sources ","timestamp":"2017-06-26T14:26:37.077Z"}
+{"keywords":"chromosomes","level":"info","message":"Got new request. Id: e190fad0-c48f-4b57-958b-0c9dc90e743b","timestamp":"2017-06-26T14:28:34.503Z"}
+{"level":"info","message":"Request Id: e190fad0-c48f-4b57-958b-0c9dc90e743b Validating request ","timestamp":"2017-06-26T14:28:34.504Z"}
+{"level":"info","message":"Request Id e190fad0-c48f-4b57-958b-0c9dc90e743b Keywords chromosomes Color: all Type: all","timestamp":"2017-06-26T14:28:34.504Z"}
+{"level":"info","message":"Request Id: e190fad0-c48f-4b57-958b-0c9dc90e743b Getting images from cache","timestamp":"2017-06-26T14:28:34.505Z"}
+{"total_no_of_images":40,"level":"info","message":"Request Id: e190fad0-c48f-4b57-958b-0c9dc90e743b Got images from sources ","timestamp":"2017-06-26T14:28:36.998Z"}

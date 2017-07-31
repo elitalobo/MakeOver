@@ -1,0 +1,10 @@
+{"keywords":"astroids","level":"info","message":"Got new request. Id: 0c9c4eff-cf0d-4385-a85c-645155c08713","timestamp":"2017-06-26T15:11:23.942Z"}
+{"level":"info","message":"Request Id: 0c9c4eff-cf0d-4385-a85c-645155c08713 Validating request ","timestamp":"2017-06-26T15:11:23.945Z"}
+{"level":"info","message":"Request Id 0c9c4eff-cf0d-4385-a85c-645155c08713 Keywords astroids Color: all Type: all","timestamp":"2017-06-26T15:11:23.945Z"}
+{"level":"info","message":"Request Id: 0c9c4eff-cf0d-4385-a85c-645155c08713 Getting images from cache","timestamp":"2017-06-26T15:11:23.946Z"}
+{"total_no_of_images":20,"level":"info","message":"Request Id: 0c9c4eff-cf0d-4385-a85c-645155c08713 Got images from sources ","timestamp":"2017-06-26T15:11:26.842Z"}
+{"keywords":"rabbits","level":"info","message":"Got new request. Id: 89690b80-4708-4658-9631-59c310d25912","timestamp":"2017-06-26T15:12:36.697Z"}
+{"level":"info","message":"Request Id: 89690b80-4708-4658-9631-59c310d25912 Validating request ","timestamp":"2017-06-26T15:12:36.698Z"}
+{"level":"info","message":"Request Id 89690b80-4708-4658-9631-59c310d25912 Keywords rabbits Color: all Type: all","timestamp":"2017-06-26T15:12:36.698Z"}
+{"level":"info","message":"Request Id: 89690b80-4708-4658-9631-59c310d25912 Getting images from cache","timestamp":"2017-06-26T15:12:36.698Z"}
+{"total_no_of_images":40,"level":"info","message":"Request Id: 89690b80-4708-4658-9631-59c310d25912 Got images from sources ","timestamp":"2017-06-26T15:12:40.048Z"}

@@ -1,0 +1,5 @@
+{"keywords":"cat","level":"info","message":"Got new request. Id: 85832e92-8097-4092-b910-e2409d73f44b","timestamp":"2016-12-15T07:32:05.129Z"}
+{"level":"info","message":"Request Id: 85832e92-8097-4092-b910-e2409d73f44b Validating request ","timestamp":"2016-12-15T07:32:05.131Z"}
+{"level":"info","message":"Request Id 85832e92-8097-4092-b910-e2409d73f44b Keywords cat Color: all Type: all","timestamp":"2016-12-15T07:32:05.132Z"}
+{"level":"info","message":"Request Id: 85832e92-8097-4092-b910-e2409d73f44b Getting images from cache","timestamp":"2016-12-15T07:32:05.132Z"}
+{"level":"error","message":"Request Id: 85832e92-8097-4092-b910-e2409d73f44b No images were returned by sources! Check keywords","timestamp":"2016-12-15T07:32:07.703Z"}

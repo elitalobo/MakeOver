@@ -1,0 +1,5 @@
+{"keywords":"cat","level":"info","message":"Got new request. Id: 320172f6-5860-42c0-8ba8-50cbc0a85542","timestamp":"2017-02-03T10:22:24.468Z"}
+{"level":"info","message":"Request Id: 320172f6-5860-42c0-8ba8-50cbc0a85542 Validating request ","timestamp":"2017-02-03T10:22:24.470Z"}
+{"level":"info","message":"Request Id 320172f6-5860-42c0-8ba8-50cbc0a85542 Keywords cat Color: all Type: all","timestamp":"2017-02-03T10:22:24.470Z"}
+{"level":"info","message":"Request Id: 320172f6-5860-42c0-8ba8-50cbc0a85542 Getting images from cache","timestamp":"2017-02-03T10:22:24.470Z"}
+{"level":"error","message":"Request Id: 320172f6-5860-42c0-8ba8-50cbc0a85542 No images were returned by sources! Check keywords","timestamp":"2017-02-03T10:22:25.984Z"}

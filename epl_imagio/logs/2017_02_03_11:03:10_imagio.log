@@ -1,0 +1,5 @@
+{"keywords":"cat","level":"info","message":"Got new request. Id: b8c63ad5-22a5-42c1-ab25-e525b121498f","timestamp":"2017-02-03T05:33:14.166Z"}
+{"level":"info","message":"Request Id: b8c63ad5-22a5-42c1-ab25-e525b121498f Validating request ","timestamp":"2017-02-03T05:33:14.169Z"}
+{"level":"info","message":"Request Id b8c63ad5-22a5-42c1-ab25-e525b121498f Keywords cat Color: all Type: all","timestamp":"2017-02-03T05:33:14.170Z"}
+{"level":"info","message":"Request Id: b8c63ad5-22a5-42c1-ab25-e525b121498f Getting images from cache","timestamp":"2017-02-03T05:33:14.170Z"}
+{"level":"error","message":"Request Id: b8c63ad5-22a5-42c1-ab25-e525b121498f No images were returned by sources! Check keywords","timestamp":"2017-02-03T05:33:15.389Z"}

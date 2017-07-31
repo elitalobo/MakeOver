@@ -1,0 +1,5 @@
+{"keywords":"cat","level":"info","message":"Got new request. Id: c8148c92-82b1-46af-8644-f0c982c99da1","timestamp":"2017-02-03T05:31:16.230Z"}
+{"level":"info","message":"Request Id: c8148c92-82b1-46af-8644-f0c982c99da1 Validating request ","timestamp":"2017-02-03T05:31:16.232Z"}
+{"level":"info","message":"Request Id c8148c92-82b1-46af-8644-f0c982c99da1 Keywords cat Color: all Type: all","timestamp":"2017-02-03T05:31:16.232Z"}
+{"level":"info","message":"Request Id: c8148c92-82b1-46af-8644-f0c982c99da1 Getting images from cache","timestamp":"2017-02-03T05:31:16.233Z"}
+{"level":"error","message":"Request Id: c8148c92-82b1-46af-8644-f0c982c99da1 No images were returned by sources! Check keywords","timestamp":"2017-02-03T05:31:17.774Z"}

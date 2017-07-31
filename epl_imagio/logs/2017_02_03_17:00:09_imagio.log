@@ -1,0 +1,5 @@
+{"keywords":"cat","level":"info","message":"Got new request. Id: e925f93e-a684-4538-a572-ddd770163db9","timestamp":"2017-02-03T11:30:13.206Z"}
+{"level":"info","message":"Request Id: e925f93e-a684-4538-a572-ddd770163db9 Validating request ","timestamp":"2017-02-03T11:30:13.208Z"}
+{"level":"info","message":"Request Id e925f93e-a684-4538-a572-ddd770163db9 Keywords cat Color: all Type: all","timestamp":"2017-02-03T11:30:13.209Z"}
+{"level":"info","message":"Request Id: e925f93e-a684-4538-a572-ddd770163db9 Getting images from cache","timestamp":"2017-02-03T11:30:13.209Z"}
+{"total_no_of_images":29,"level":"info","message":"Request Id: e925f93e-a684-4538-a572-ddd770163db9 Got images from sources ","timestamp":"2017-02-03T11:30:13.937Z"}
