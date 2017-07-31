@@ -318,8 +318,8 @@ function process_result(results) {
 function processText(text, details, old_callback) {
 	//console.log(old_callback);
 	text  = text.replace(/[^A-Za-z 0-9 \.,\?""!@#\$%\^&\*\(\)-_=\+;:<>\/\\\|\}\{\[\]`~]*/g, '')
-	console.log(text);
-	request.post("http//54.208.20.206/api/get_top_business_keywords" ,
+	//console.log(text);
+	request.post("http://54.208.20.206/api/get_top_business_keywords" ,
                                   { json: { "text" : JSON.stringify(text)  }},
                                   function (error, response, body) {
 					//console.log("body");
@@ -327,6 +327,8 @@ function processText(text, details, old_callback) {
 					 //console.log(response);
 					//console.log(error);
 					var result = body;
+					console.log(result);
+					console.log(error);
                                         var results = JSON.parse(JSON.stringify(result));
 					if(results["error"]!=null && results["error"]!=undefined && results["error"]!=0) {
 						old_callback("could not get keywords from site", null);
