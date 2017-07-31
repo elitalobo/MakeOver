@@ -48,7 +48,7 @@ app.use("/data", express.static(__dirname + '/data'));
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
-var port1 =  8888;
+var port1 =  4000;
 server.listen(port1,  process.argv[2] || "0.0.0.0", function (err) {
     if (err)
         throw err;
@@ -125,7 +125,7 @@ io.on('connection', function (socket) {
 });
 
 swagger.configureSwaggerPaths('', 'api-docs', '');
-var applicationUrl = "http://0.0.0.0:8888";
+var applicationUrl = "http://0.0.0.0:4000";
 swagger.configure(applicationUrl, '1.0.0');
 app.get('/', function (req, res) {
         res.sendFile(__dirname + '/dist/index.html');

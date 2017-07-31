@@ -46,7 +46,7 @@ app.use(express.static('dist'));
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
-var port1 =  8080;
+var port1 =  4040;
 server.listen(port1,  process.argv[2] || "127.0.0.1", function (err) {
     if (err)
         throw err;
